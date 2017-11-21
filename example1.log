@@ -1,0 +1,208 @@
+Execution stack:
+openFile(file, test.in)
+readFromFile(a, file);readFromFile(b, file);print(a + b);closeFile(file)
+Symbol table:
+Empty
+Output:
+Empty
+File table:
+Empty
+
+
+Execution stack:
+readFromFile(a, file);readFromFile(b, file);print(a + b);closeFile(file)
+Symbol table:
+file : 1
+Output:
+Empty
+File table:
+test.in : 1
+
+
+Execution stack:
+readFromFile(a, file)
+readFromFile(b, file);print(a + b);closeFile(file)
+Symbol table:
+file : 1
+Output:
+Empty
+File table:
+test.in : 1
+
+
+Execution stack:
+readFromFile(b, file);print(a + b);closeFile(file)
+Symbol table:
+a : 2
+file : 1
+Output:
+Empty
+File table:
+test.in : 1
+
+
+Execution stack:
+readFromFile(b, file)
+print(a + b);closeFile(file)
+Symbol table:
+a : 2
+file : 1
+Output:
+Empty
+File table:
+test.in : 1
+
+
+Execution stack:
+print(a + b);closeFile(file)
+Symbol table:
+a : 2
+b : 3
+file : 1
+Output:
+Empty
+File table:
+test.in : 1
+
+
+Execution stack:
+print(a + b)
+closeFile(file)
+Symbol table:
+a : 2
+b : 3
+file : 1
+Output:
+Empty
+File table:
+test.in : 1
+
+
+Execution stack:
+closeFile(file)
+Symbol table:
+a : 2
+b : 3
+file : 1
+Output:
+5
+File table:
+test.in : 1
+
+
+Execution stack:
+Empty
+Symbol table:
+a : 2
+b : 3
+file : 1
+Output:
+5
+File table:
+Empty
+
+
+Execution stack:
+openFile(file, test.in)
+readFromFile(a, file);readFromFile(b, file);print(a + b);closeFile(file)
+Symbol table:
+Empty
+Output:
+Empty
+File table:
+Empty
+
+
+Execution stack:
+readFromFile(a, file);readFromFile(b, file);print(a + b);closeFile(file)
+Symbol table:
+file : 1
+Output:
+Empty
+File table:
+test.in : 1
+
+
+Execution stack:
+readFromFile(a, file)
+readFromFile(b, file);print(a + b);closeFile(file)
+Symbol table:
+file : 1
+Output:
+Empty
+File table:
+test.in : 1
+
+
+Execution stack:
+readFromFile(b, file);print(a + b);closeFile(file)
+Symbol table:
+a : 2
+file : 1
+Output:
+Empty
+File table:
+test.in : 1
+
+
+Execution stack:
+readFromFile(b, file)
+print(a + b);closeFile(file)
+Symbol table:
+a : 2
+file : 1
+Output:
+Empty
+File table:
+test.in : 1
+
+
+Execution stack:
+print(a + b);closeFile(file)
+Symbol table:
+a : 2
+b : 3
+file : 1
+Output:
+Empty
+File table:
+test.in : 1
+
+
+Execution stack:
+print(a + b)
+closeFile(file)
+Symbol table:
+a : 2
+b : 3
+file : 1
+Output:
+Empty
+File table:
+test.in : 1
+
+
+Execution stack:
+closeFile(file)
+Symbol table:
+a : 2
+b : 3
+file : 1
+Output:
+5
+File table:
+test.in : 1
+
+
+Execution stack:
+Empty
+Symbol table:
+a : 2
+b : 3
+file : 1
+Output:
+5
+File table:
+Empty
+
+

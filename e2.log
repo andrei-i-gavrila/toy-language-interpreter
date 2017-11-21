@@ -1,0 +1,398 @@
+Execution stack:
+openFile(f, test.in)
+readFromFile(c, f);print(c);if (c) THEN (readFromFile(c, f);print(c)) ELSE (print(0));closeFile(f)
+Symbol table:
+Empty
+Output:
+Empty
+File table:
+Empty
+
+
+Execution stack:
+readFromFile(c, f);print(c);if (c) THEN (readFromFile(c, f);print(c)) ELSE (print(0));closeFile(f)
+Symbol table:
+f : 1
+Output:
+Empty
+File table:
+test.in : 1
+
+
+Execution stack:
+readFromFile(c, f)
+print(c);if (c) THEN (readFromFile(c, f);print(c)) ELSE (print(0));closeFile(f)
+Symbol table:
+f : 1
+Output:
+Empty
+File table:
+test.in : 1
+
+
+Execution stack:
+print(c);if (c) THEN (readFromFile(c, f);print(c)) ELSE (print(0));closeFile(f)
+Symbol table:
+c : 15
+f : 1
+Output:
+Empty
+File table:
+test.in : 1
+
+
+Execution stack:
+print(c)
+if (c) THEN (readFromFile(c, f);print(c)) ELSE (print(0));closeFile(f)
+Symbol table:
+c : 15
+f : 1
+Output:
+Empty
+File table:
+test.in : 1
+
+
+Execution stack:
+if (c) THEN (readFromFile(c, f);print(c)) ELSE (print(0));closeFile(f)
+Symbol table:
+c : 15
+f : 1
+Output:
+15
+File table:
+test.in : 1
+
+
+Execution stack:
+if (c) THEN (readFromFile(c, f);print(c)) ELSE (print(0))
+closeFile(f)
+Symbol table:
+c : 15
+f : 1
+Output:
+15
+File table:
+test.in : 1
+
+
+Execution stack:
+print(0)
+closeFile(f)
+Symbol table:
+c : 15
+f : 1
+Output:
+15
+File table:
+test.in : 1
+
+
+Execution stack:
+closeFile(f)
+Symbol table:
+c : 15
+f : 1
+Output:
+150
+File table:
+test.in : 1
+
+
+Execution stack:
+Empty
+Symbol table:
+c : 15
+f : 1
+Output:
+150
+File table:
+Empty
+
+
+Execution stack:
+openFile(f, test.in)
+readFromFile(c, f);print(c);if (c) THEN (readFromFile(c, f);print(c)) ELSE (print(0));closeFile(f)
+Symbol table:
+Empty
+Output:
+Empty
+File table:
+Empty
+
+
+Execution stack:
+readFromFile(c, f);print(c);if (c) THEN (readFromFile(c, f);print(c)) ELSE (print(0));closeFile(f)
+Symbol table:
+f : 1
+Output:
+Empty
+File table:
+test.in : 1
+
+
+Execution stack:
+readFromFile(c, f)
+print(c);if (c) THEN (readFromFile(c, f);print(c)) ELSE (print(0));closeFile(f)
+Symbol table:
+f : 1
+Output:
+Empty
+File table:
+test.in : 1
+
+
+Execution stack:
+print(c);if (c) THEN (readFromFile(c, f);print(c)) ELSE (print(0));closeFile(f)
+Symbol table:
+c : 15
+f : 1
+Output:
+Empty
+File table:
+test.in : 1
+
+
+Execution stack:
+print(c)
+if (c) THEN (readFromFile(c, f);print(c)) ELSE (print(0));closeFile(f)
+Symbol table:
+c : 15
+f : 1
+Output:
+Empty
+File table:
+test.in : 1
+
+
+Execution stack:
+if (c) THEN (readFromFile(c, f);print(c)) ELSE (print(0));closeFile(f)
+Symbol table:
+c : 15
+f : 1
+Output:
+15
+File table:
+test.in : 1
+
+
+Execution stack:
+if (c) THEN (readFromFile(c, f);print(c)) ELSE (print(0))
+closeFile(f)
+Symbol table:
+c : 15
+f : 1
+Output:
+15
+File table:
+test.in : 1
+
+
+Execution stack:
+readFromFile(c, f);print(c)
+closeFile(f)
+Symbol table:
+c : 15
+f : 1
+Output:
+15
+File table:
+test.in : 1
+
+
+Execution stack:
+readFromFile(c, f)
+print(c)
+closeFile(f)
+Symbol table:
+c : 15
+f : 1
+Output:
+15
+File table:
+test.in : 1
+
+
+Execution stack:
+print(c)
+closeFile(f)
+Symbol table:
+c : 50
+f : 1
+Output:
+15
+File table:
+test.in : 1
+
+
+Execution stack:
+closeFile(f)
+Symbol table:
+c : 50
+f : 1
+Output:
+1550
+File table:
+test.in : 1
+
+
+Execution stack:
+Empty
+Symbol table:
+c : 50
+f : 1
+Output:
+1550
+File table:
+Empty
+
+
+openFile(f, test.in)
+readFromFile(c, f);print(c);if (c) THEN (readFromFile(c, f);print(c)) ELSE (print(0));closeFile(f)Dictionary:
+Empty
+List:
+Empty
+FileTable:
+Empty
+Heap:
+com.andrei.impl.domain.Heap@27c20538
+
+
+
+readFromFile(c, f);print(c);if (c) THEN (readFromFile(c, f);print(c)) ELSE (print(0));closeFile(f)Dictionary:
+f : 2
+List:
+Empty
+FileTable:
+test.in : 2
+Heap:
+com.andrei.impl.domain.Heap@27c20538
+
+
+
+readFromFile(c, f)
+print(c);if (c) THEN (readFromFile(c, f);print(c)) ELSE (print(0));closeFile(f)Dictionary:
+f : 2
+List:
+Empty
+FileTable:
+test.in : 2
+Heap:
+com.andrei.impl.domain.Heap@27c20538
+
+
+
+print(c);if (c) THEN (readFromFile(c, f);print(c)) ELSE (print(0));closeFile(f)Dictionary:
+c : 15
+f : 2
+List:
+Empty
+FileTable:
+test.in : 2
+Heap:
+com.andrei.impl.domain.Heap@27c20538
+
+
+
+print(c)
+if (c) THEN (readFromFile(c, f);print(c)) ELSE (print(0));closeFile(f)Dictionary:
+c : 15
+f : 2
+List:
+Empty
+FileTable:
+test.in : 2
+Heap:
+com.andrei.impl.domain.Heap@27c20538
+
+
+
+if (c) THEN (readFromFile(c, f);print(c)) ELSE (print(0));closeFile(f)Dictionary:
+c : 15
+f : 2
+List:
+15
+FileTable:
+test.in : 2
+Heap:
+com.andrei.impl.domain.Heap@27c20538
+
+
+
+if (c) THEN (readFromFile(c, f);print(c)) ELSE (print(0))
+closeFile(f)Dictionary:
+c : 15
+f : 2
+List:
+15
+FileTable:
+test.in : 2
+Heap:
+com.andrei.impl.domain.Heap@27c20538
+
+
+
+readFromFile(c, f);print(c)
+closeFile(f)Dictionary:
+c : 15
+f : 2
+List:
+15
+FileTable:
+test.in : 2
+Heap:
+com.andrei.impl.domain.Heap@27c20538
+
+
+
+readFromFile(c, f)
+print(c)
+closeFile(f)Dictionary:
+c : 15
+f : 2
+List:
+15
+FileTable:
+test.in : 2
+Heap:
+com.andrei.impl.domain.Heap@27c20538
+
+
+
+print(c)
+closeFile(f)Dictionary:
+c : 50
+f : 2
+List:
+15
+FileTable:
+test.in : 2
+Heap:
+com.andrei.impl.domain.Heap@27c20538
+
+
+
+closeFile(f)Dictionary:
+c : 50
+f : 2
+List:
+1550
+FileTable:
+test.in : 2
+Heap:
+com.andrei.impl.domain.Heap@27c20538
+
+
+
+EmptyDictionary:
+c : 50
+f : 2
+List:
+1550
+FileTable:
+Empty
+Heap:
+com.andrei.impl.domain.Heap@27c20538
+
+
+

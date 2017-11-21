@@ -1,0 +1,41 @@
+Execution stack:
+foo = 42
+if (foo - 42) THEN (print(10)) ELSE (print(42))
+Symbol table:
+Empty
+Output:
+Empty
+File table:
+Empty
+
+
+Execution stack:
+if (foo - 42) THEN (print(10)) ELSE (print(42))
+Symbol table:
+foo : 42
+Output:
+Empty
+File table:
+Empty
+
+
+Execution stack:
+print(42)
+Symbol table:
+foo : 42
+Output:
+Empty
+File table:
+Empty
+
+
+Execution stack:
+Empty
+Symbol table:
+foo : 42
+Output:
+42
+File table:
+Empty
+
+
