@@ -17,11 +17,17 @@ public class If implements IStatement {
         this.elseStatement = elseStatement;
     }
 
+    public If(Expression condition, IStatement statement) {
+        this.condition = condition;
+        this.thenStatement = statement;
+        this.elseStatement = null;
+    }
+
     @Override
     public void execute(ProgramState state) throws ToyException {
         if (condition.evaluate(state) != 0) {
             state.getExecutionStack().push(thenStatement);
-        } else {
+        } else if (elseStatement != null) {
             state.getExecutionStack().push(elseStatement);
         }
 
@@ -31,6 +37,6 @@ public class If implements IStatement {
     public String toString() {
         return "if (" + condition.toString() + ") " +
                 "THEN (" + thenStatement.toString() + ") " +
-                "ELSE (" + elseStatement.toString() + ")";
+                (elseStatement != null ? "ELSE (" + elseStatement.toString() + ")" : "");
     }
 }
