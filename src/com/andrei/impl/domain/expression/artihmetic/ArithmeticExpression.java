@@ -10,18 +10,4 @@ public abstract class ArithmeticExpression extends Expression {
         this.lhs = lhs;
         this.rhs = rhs;
     }
-
-    public static Expression plus(Expression lhs, Expression rhs) {
-        return new Addition(lhs, rhs);
-    }
-    public static Expression minus(Expression lhs, Expression rhs) {
-        return new Subtraction(lhs, rhs);
-    }
-    public static Expression divide(Expression lhs, Expression rhs) {
-        return new Division(lhs, rhs);
-    }
-    public static Expression multiply(Expression lhs, Expression rhs) {
-        return new Multiplication(lhs, rhs);
-    }
-
 }
