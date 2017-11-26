@@ -19,7 +19,7 @@ public class ReadFile implements IStatement {
     }
 
     @Override
-    public void execute(ProgramState state) throws ToyException {
+    public ProgramState execute(ProgramState state) throws ToyException {
         IFileTable fileTable = state.getFileTable();
         int fileDescriptor = fileDescriptorExpression.evaluate(state);
 
@@ -36,6 +36,7 @@ public class ReadFile implements IStatement {
         Integer readValue = line.isEmpty() ? 0 : Integer.parseInt(line);
         state.getSymbolTable().put(var, readValue);
 
+        return state;
     }
 
     @Override

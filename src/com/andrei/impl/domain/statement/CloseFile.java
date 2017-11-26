@@ -13,10 +13,11 @@ public class CloseFile implements IStatement {
     }
 
     @Override
-    public void execute(ProgramState state) throws ToyException {
+    public ProgramState execute(ProgramState state) throws ToyException {
         int fileDescriptor = fileDescriptorExpression.evaluate(state);
         state.getFileTable().closeFile(fileDescriptor);
 
+        return state;
     }
 
     @Override

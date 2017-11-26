@@ -1,22 +1,26 @@
 package com.andrei.impl.domain.statement;
 
-import com.andrei.impl.domain.List;
+import com.andrei.impl.domain.ArrayList;
 import com.andrei.impl.domain.ProgramState;
 import com.andrei.impl.domain.expression.artihmetic.ArithmeticException;
-import com.andrei.interfaces.domain.IList;
 import com.andrei.interfaces.domain.IStatement;
+
+import java.util.Arrays;
+import java.util.List;
 
 public class Compound implements IStatement {
 
-    final IList<IStatement> statements = new List<>();
+    final List<IStatement> statements = new ArrayList<>();
 
     public Compound(IStatement... statements) {
-        this.statements.addAll(statements);
+        this.statements.addAll(Arrays.asList(statements));
     }
 
     @Override
-    public void execute(ProgramState state) throws ArithmeticException {
-        statements.stream().forEach(state.getExecutionStack()::push);
+    public ProgramState execute(ProgramState state) throws ArithmeticException {
+        statements.forEach(state.getExecutionStack()::push);
+
+        return state;
     }
 
     @Override

@@ -15,9 +15,10 @@ public class Assignment implements IStatement{
     }
 
     @Override
-    public void execute(ProgramState state) throws ToyException {
+    public ProgramState execute(ProgramState state) throws ToyException {
         state.getSymbolTable().put(identifier, expression.evaluate(state));
 
+        return state;
     }
 
     @Override

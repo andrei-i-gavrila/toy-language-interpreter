@@ -1,16 +1,16 @@
 package com.andrei.impl.domain;
 
 import com.andrei.impl.domain.exceptions.ToyException;
-import com.andrei.interfaces.domain.IDictionary;
 import com.andrei.interfaces.domain.IFileTable;
 
 import java.io.BufferedReader;
+import java.util.Map;
 
 public class FileTable implements IFileTable {
     private static int NEXT_DESCRIPTOR = 1;
 
-    private final IDictionary<String, ToyFile> fileNames;
-    private final IDictionary<Integer, ToyFile> fileDescriptors;
+    private final Map<String, ToyFile> fileNames;
+    private final Map<Integer, ToyFile> fileDescriptors;
 
 
     FileTable() {
@@ -19,7 +19,7 @@ public class FileTable implements IFileTable {
     }
 
     private boolean isFileOpened(String filename) {
-        return fileNames.has(filename);
+        return fileNames.containsKey(filename);
     }
 
 
@@ -52,7 +52,7 @@ public class FileTable implements IFileTable {
     }
 
     private ToyFile tryGetFile(Integer fileDescriptor) throws ToyException {
-        if (!fileDescriptors.has(fileDescriptor)) {
+        if (!fileDescriptors.containsKey(fileDescriptor)) {
             throw new ToyException("File descriptor not found");
         }
         return fileDescriptors.get(fileDescriptor);

@@ -5,6 +5,6 @@ import com.andrei.impl.domain.exceptions.ToyException;
 
 public interface IStatement {
 
-    void execute(ProgramState state) throws ToyException;
+    ProgramState execute(ProgramState state) throws ToyException;
 
 }

@@ -16,10 +16,12 @@ public class Allocate implements IStatement{
     }
 
     @Override
-    public void execute(ProgramState state) throws ToyException {
+    public ProgramState execute(ProgramState state) throws ToyException {
         Integer allocatedMemoryAddress = state.getHeap().allocate();
         state.getSymbolTable().put(variable, allocatedMemoryAddress);
         state.getHeap().write(allocatedMemoryAddress, valueExpression.evaluate(state));
+
+        return state;
     }
 
     @Override

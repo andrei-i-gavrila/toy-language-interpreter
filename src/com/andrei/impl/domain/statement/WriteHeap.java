@@ -17,8 +17,10 @@ public class WriteHeap implements IStatement {
 
 
     @Override
-    public void execute(ProgramState state) throws ToyException {
+    public ProgramState execute(ProgramState state) throws ToyException {
         state.getHeap().write(new Variable(variable).evaluate(state), valueExpression.evaluate(state));
+
+        return state;
     }
 
     @Override
