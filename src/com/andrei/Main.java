@@ -4,6 +4,7 @@ import com.andrei.impl.domain.expression.Constant;
 import com.andrei.impl.domain.expression.ReadHeap;
 import com.andrei.impl.domain.expression.Variable;
 import com.andrei.impl.domain.expression.artihmetic.Addition;
+import com.andrei.impl.domain.expression.artihmetic.Subtraction;
 import com.andrei.impl.domain.statement.*;
 import com.andrei.impl.view.RunExampleCommand;
 import com.andrei.impl.view.TextMenu;
@@ -57,11 +58,22 @@ public class Main {
                 new Assignment("a", new Constant(0))
         );
 
+        IStatement program5 = new Compound(
+                new Assignment("v", new Constant(6)),
+                new While(
+                        new Subtraction(new Variable("v"), new Constant(4)),
+                        new Compound(
+                                new Print(new Variable("v")),
+                                new Assignment("v", new Subtraction(new Variable("v"), new Constant(1))))),
+                new Print(new Variable("v"))
+        );
+
         new TextMenu("default", "Starting point",
                 new RunExampleCommand("e1", program1),
                 new RunExampleCommand("e2", program2),
                 new RunExampleCommand("e3", program3),
-                new RunExampleCommand("e4", program4)
+                new RunExampleCommand("e4", program4),
+                new RunExampleCommand("e5", program5)
         ).run();
     }
 }

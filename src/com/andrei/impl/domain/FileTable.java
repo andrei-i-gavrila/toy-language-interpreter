@@ -51,6 +51,17 @@ public class FileTable implements IFileTable {
         return tryGetFile(fileDescriptor).getReader();
     }
 
+    @Override
+    public void closeAllFiles() {
+        this.fileDescriptors.keySet().forEach(fileDescriptor -> {
+            try {
+                closeFile(fileDescriptor);
+            } catch (ToyException e) {
+                System.err.println("Error closing file " + e.getMessage());
+            }
+        });
+    }
+
     private ToyFile tryGetFile(Integer fileDescriptor) throws ToyException {
         if (!fileDescriptors.has(fileDescriptor)) {
             throw new ToyException("File descriptor not found");

@@ -2,6 +2,7 @@ package com.andrei.impl.domain;
 
 import com.andrei.interfaces.domain.IDictionary;
 
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
@@ -45,5 +46,15 @@ public class Dictionary<K, V> implements IDictionary<K, V> {
 
     public Set<Map.Entry<K, V>> entrySet() {
         return map.entrySet();
+    }
+
+    @Override
+    public Set<K> keySet() {
+        return map.keySet();
+    }
+
+    @Override
+    public Collection<V> valueSet() {
+        return map.values();
     }
 }

@@ -11,4 +11,6 @@ public interface IFileTable {
     void closeFile(Integer fileDescriptor) throws ToyException;
 
     BufferedReader getFileReader(Integer fileDescriptor) throws ToyException;
+
+    void closeAllFiles();
 }

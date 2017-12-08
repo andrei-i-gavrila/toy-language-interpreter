@@ -22,10 +22,12 @@ public class Controller {
 
     public void allSteps() throws ToyException, IOException {
         while (!repository.getCurrentProgramState().getExecutionStack().empty()) {
+            repository.logCurrentProgramState();
             oneStep();
             repository.setProgramState(GarbageCollectors.ConservativeGarbageCollector(repository.getCurrentProgramState()));
-            repository.logCurrentProgramState();
         }
+        repository.getCurrentProgramState().getFileTable().closeAllFiles();
+        repository.logCurrentProgramState();
     }
 
     public String getOutput() {

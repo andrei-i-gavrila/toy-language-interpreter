@@ -1,5 +1,6 @@
 package com.andrei.interfaces.domain;
 
+import java.util.Collection;
 import java.util.Map;
 import java.util.Set;
 
@@ -16,4 +17,8 @@ public interface IDictionary<K, V> {
     boolean contains(V value);
 
     Set<Map.Entry<K, V>> entrySet();
+
+    Set<K> keySet();
+
+    Collection<V> valueSet();
 }

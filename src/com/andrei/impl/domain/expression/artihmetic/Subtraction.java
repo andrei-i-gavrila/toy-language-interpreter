@@ -5,7 +5,7 @@ import com.andrei.impl.domain.exceptions.ToyException;
 import com.andrei.impl.domain.expression.Expression;
 
 public class Subtraction extends ArithmeticExpression {
-    protected Subtraction(Expression lhs, Expression rhs) {
+    public Subtraction(Expression lhs, Expression rhs) {
         super(lhs, rhs);
     }
 
