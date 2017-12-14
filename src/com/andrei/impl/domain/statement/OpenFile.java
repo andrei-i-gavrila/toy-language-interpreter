@@ -15,10 +15,12 @@ public class OpenFile implements IStatement {
     }
 
     @Override
-    public void execute(ProgramState state) throws ToyException {
+    public ProgramState execute(ProgramState state) throws ToyException {
         IFileTable fileTable = state.getFileTable();
         Integer fileDescriptor = fileTable.openFile(filename);
         state.getSymbolTable().put(var, fileDescriptor);
+
+        return state;
     }
 
     @Override

@@ -24,13 +24,14 @@ public class If implements IStatement {
     }
 
     @Override
-    public void execute(ProgramState state) throws ToyException {
+    public ProgramState execute(ProgramState state) throws ToyException {
         if (condition.evaluate(state) != 0) {
             state.getExecutionStack().push(thenStatement);
         } else if (elseStatement != null) {
             state.getExecutionStack().push(elseStatement);
         }
 
+        return state;
     }
 
     @Override

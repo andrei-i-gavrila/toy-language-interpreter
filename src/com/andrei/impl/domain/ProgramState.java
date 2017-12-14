@@ -1,14 +1,18 @@
 package com.andrei.impl.domain;
 
+import com.andrei.impl.domain.exceptions.ToyException;
 import com.andrei.interfaces.domain.*;
 
+import java.io.IOException;
+import java.util.List;
+import java.util.Map;
 import java.util.stream.Stream;
 
 public class ProgramState {
 
-    private final IStack<IStatement> executionStack;
-    private final IDictionary<String, Integer> symbolTable;
-    private final IList<String> output;
+    private final Stack<IStatement> executionStack;
+    private final Map<String, Integer> symbolTable;
+    private final List<String> output;
     private final IFileTable fileTable;
     private final IHeap heap;
 
@@ -17,12 +21,12 @@ public class ProgramState {
         executionStack.push(startStatement);
 
         symbolTable = new Dictionary<>();
-        output = new List<>();
+        output = new ArrayList<>();
         fileTable = new FileTable();
         heap = new Heap();
     }
 
-    public ProgramState(IStack<IStatement> executionStack, IDictionary<String, Integer> symbolTable, IList<String> output, IFileTable fileTable, IHeap heap) {
+    public ProgramState(Stack<IStatement> executionStack, Map<String, Integer> symbolTable, List<String> output, IFileTable fileTable, IHeap heap) {
         this.executionStack = executionStack;
         this.symbolTable = symbolTable;
         this.output = output;
@@ -30,19 +34,23 @@ public class ProgramState {
         this.heap = heap;
     }
 
+    public ProgramState oneStep() throws ToyException {
+        return executionStack.pop().execute(this);
+    }
+
     public IFileTable getFileTable() {
         return fileTable;
     }
 
-    public IStack<IStatement> getExecutionStack() {
+    public Stack<IStatement> getExecutionStack() {
         return executionStack;
     }
 
-    public IDictionary<String, Integer> getSymbolTable() {
+    public Map<String, Integer> getSymbolTable() {
         return symbolTable;
     }
 
-    public IList<String> getOutput() {
+    public List<String> getOutput() {
         return output;
     }
 

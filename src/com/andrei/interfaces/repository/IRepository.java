@@ -3,12 +3,13 @@ package com.andrei.interfaces.repository;
 import com.andrei.impl.domain.ProgramState;
 
 import java.io.IOException;
+import java.util.List;
 
 public interface IRepository {
 
-    ProgramState getCurrentProgramState();
+    void setProgramStates(List<ProgramState> states);
 
-    void setProgramState(ProgramState state);
+    List<ProgramState> getProgramStates();
 
-    void logCurrentProgramState() throws IOException;
+    void logCurrentProgramState(ProgramState state) throws IOException;
 }

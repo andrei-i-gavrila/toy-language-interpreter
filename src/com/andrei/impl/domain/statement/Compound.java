@@ -24,9 +24,8 @@ public class Compound implements IStatement {
     }
 
     @Override
-    public void execute(ProgramState state) throws ToyException {
-        state.getExecutionStack().push(nextStatement);
-        state.getExecutionStack().push(thisStatement);
+    public void execute(ProgramState state) throws ArithmeticException {
+        statements.stream().forEach(state.getExecutionStack()::push);
     }
 
     @Override

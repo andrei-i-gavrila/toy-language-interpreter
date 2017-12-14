@@ -14,9 +14,10 @@ public class Print implements IStatement{
     }
 
     @Override
-    public void execute(ProgramState state) throws ToyException {
+    public ProgramState execute(ProgramState state) throws ToyException {
         state.getOutput().add(expression.evaluate(state).toString());
 
+        return state;
     }
 
     @Override
