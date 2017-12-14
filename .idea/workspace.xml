@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/com/andrei/impl/domain/FileTable.java" line="14" />
+    <bookmark url="file://$PROJECT_DIR$/src/com/andrei/impl/domain/FileTable.java" line="16" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2b3e013a-f134-4e22-8acb-7846790fa832" name="Default" comment="Refactor to allow nicer code.">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/andrei/Main.java" afterPath="$PROJECT_DIR$/src/com/andrei/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/andrei/impl/domain/List.java" afterPath="$PROJECT_DIR$/src/com/andrei/impl/domain/List.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/andrei/impl/domain/statement/Compound.java" afterPath="$PROJECT_DIR$/src/com/andrei/impl/domain/statement/Compound.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/andrei/impl/domain/statement/If.java" afterPath="$PROJECT_DIR$/src/com/andrei/impl/domain/statement/If.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/andrei/impl/domain/statement/OpenFile.java" afterPath="$PROJECT_DIR$/src/com/andrei/impl/domain/statement/OpenFile.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/andrei/interfaces/domain/IList.java" afterPath="$PROJECT_DIR$/src/com/andrei/interfaces/domain/IList.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/andrei/impl/domain/FileTable.java" afterPath="$PROJECT_DIR$/src/com/andrei/impl/domain/FileTable.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,41 +22,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ToyException.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/andrei/impl/domain/exceptions/ToyException.java">
+      <file leaf-file-name="Controller.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/andrei/impl/controller/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-              <folding />
+            <state relative-caret-position="1056">
+              <caret line="28" column="66" lean-forward="false" selection-start-line="28" selection-start-column="66" selection-end-line="28" selection-end-column="66" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VariableException.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/andrei/impl/domain/exceptions/VariableException.java">
+      <file leaf-file-name="ProgramState.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/andrei/impl/domain/ProgramState.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ArithmeticException.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/andrei/impl/domain/expression/artihmetic/ArithmeticException.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ArithmeticExpression.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/andrei/impl/domain/expression/artihmetic/ArithmeticExpression.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="13" column="31" lean-forward="false" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
+            <state relative-caret-position="1320">
+              <caret line="32" column="22" lean-forward="false" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -69,8 +47,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/andrei/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="41" column="42" lean-forward="true" selection-start-line="41" selection-start-column="42" selection-end-line="41" selection-end-column="42" />
+            <state relative-caret-position="1056">
+              <caret line="33" column="51" lean-forward="false" selection-start-line="33" selection-start-column="51" selection-end-line="33" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -78,51 +56,71 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="If.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/andrei/impl/domain/statement/If.java">
+      <file leaf-file-name="While.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/andrei/impl/domain/statement/While.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="127">
-              <caret line="39" column="87" lean-forward="false" selection-start-line="39" selection-start-column="87" selection-end-line="39" selection-end-column="87" />
+            <state relative-caret-position="792">
+              <caret line="21" column="9" lean-forward="false" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OpenFile.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/andrei/impl/domain/statement/OpenFile.java">
+      <file leaf-file-name="LogicExpression.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/andrei/impl/domain/expression/logic/LogicExpression.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="263">
-              <caret line="20" column="56" lean-forward="false" selection-start-line="20" selection-start-column="56" selection-end-line="20" selection-end-column="56" />
+            <state relative-caret-position="484">
+              <caret line="13" column="1" lean-forward="false" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Compound.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/andrei/impl/domain/statement/Compound.java">
+      <file leaf-file-name="Equal.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/andrei/impl/domain/expression/logic/Equal.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="23" column="107" lean-forward="false" selection-start-line="23" selection-start-column="107" selection-end-line="23" selection-end-column="107" />
+            <state relative-caret-position="616">
+              <caret line="16" column="34" lean-forward="false" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="34" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IList.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/andrei/interfaces/domain/IList.java">
+      <file leaf-file-name="IFileTable.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/andrei/interfaces/domain/IFileTable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+            <state relative-caret-position="528">
+              <caret line="14" column="9" lean-forward="false" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="List.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/andrei/impl/domain/List.java">
+      <file leaf-file-name="FileTable.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/andrei/impl/domain/FileTable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="134">
-              <caret line="21" column="28" lean-forward="false" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+            <state relative-caret-position="200">
+              <caret line="55" column="13" lean-forward="true" selection-start-line="55" selection-start-column="13" selection-end-line="55" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IDictionary.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/andrei/interfaces/domain/IDictionary.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="552">
+              <caret line="20" column="11" lean-forward="false" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Expression.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/andrei/impl/domain/expression/Expression.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="5" column="22" lean-forward="false" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -146,6 +144,11 @@
       </list>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -155,8 +158,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/andrei/impl/domain/expression/artihmetic/MultiplicationExpression.java" />
-        <option value="$PROJECT_DIR$/src/com/andrei/impl/domain/statement/CompoundStatement.java" />
         <option value="$PROJECT_DIR$/src/com/andrei/impl/domain/Stack.java" />
         <option value="$PROJECT_DIR$/src/com/andrei/impl/view/CommandImpl.java" />
         <option value="$PROJECT_DIR$/src/com/andrei/impl/view/Command.java" />
@@ -168,7 +169,6 @@
         <option value="$PROJECT_DIR$/test.in" />
         <option value="$PROJECT_DIR$/logger.txt" />
         <option value="$PROJECT_DIR$/src/com/andrei/impl/domain/statement/IfStatement.java" />
-        <option value="$PROJECT_DIR$/src/com/andrei/impl/domain/FileTable.java" />
         <option value="$PROJECT_DIR$/src/com/andrei/impl/domain/expression/ConstantExpression.java" />
         <option value="$PROJECT_DIR$/src/com/andrei/impl/domain/expression/Constant.java" />
         <option value="$PROJECT_DIR$/src/com/andrei/impl/domain/expression/VariableExpression.java" />
@@ -202,18 +202,20 @@
         <option value="$PROJECT_DIR$/src/com/andrei/impl/domain/ProgramState.java" />
         <option value="$PROJECT_DIR$/src/com/andrei/impl/domain/statement/Compound.java" />
         <option value="$PROJECT_DIR$/src/com/andrei/impl/domain/statement/OpenFile.java" />
-        <option value="$PROJECT_DIR$/src/com/andrei/Main.java" />
         <option value="$PROJECT_DIR$/src/com/andrei/impl/domain/statement/If.java" />
         <option value="$PROJECT_DIR$/src/com/andrei/impl/domain/List.java" />
         <option value="$PROJECT_DIR$/src/com/andrei/interfaces/domain/IList.java" />
+        <option value="$PROJECT_DIR$/e5.log" />
+        <option value="$PROJECT_DIR$/src/com/andrei/impl/domain/expression/logic/Equal.java" />
+        <option value="$PROJECT_DIR$/src/com/andrei/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/andrei/impl/domain/FileTable.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="49" />
-    <option name="y" value="-24" />
-    <option name="width" value="1317" />
-    <option name="height" value="557" />
+    <option name="x" value="1366" />
+    <option name="width" value="2560" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -250,7 +252,7 @@
       </profile-state>
     </entry>
   </component>
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
@@ -268,7 +270,69 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="ToyLanguageInterpreter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ToyLanguageInterpreter" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ToyLanguageInterpreter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ToyLanguageInterpreter" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ToyLanguageInterpreter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ToyLanguageInterpreter" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="andrei" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ToyLanguageInterpreter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ToyLanguageInterpreter" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="andrei" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ToyLanguageInterpreter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ToyLanguageInterpreter" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="andrei" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ToyLanguageInterpreter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ToyLanguageInterpreter" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="andrei" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+              <item name="expression" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ToyLanguageInterpreter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ToyLanguageInterpreter" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="andrei" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+              <item name="expression" type="462c0819:PsiDirectoryNode" />
+              <item name="logic" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ToyLanguageInterpreter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ToyLanguageInterpreter" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="andrei" type="462c0819:PsiDirectoryNode" />
+              <item name="interfaces" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scratches" />
       <pane id="PackagesPane">
         <subPane>
@@ -329,93 +393,7 @@
         </subPane>
       </pane>
       <pane id="AndroidView" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="ToyLanguageInterpreter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ToyLanguageInterpreter" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ToyLanguageInterpreter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ToyLanguageInterpreter" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ToyLanguageInterpreter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ToyLanguageInterpreter" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="andrei" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ToyLanguageInterpreter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ToyLanguageInterpreter" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="andrei" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ToyLanguageInterpreter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ToyLanguageInterpreter" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="andrei" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ToyLanguageInterpreter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ToyLanguageInterpreter" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="andrei" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ToyLanguageInterpreter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ToyLanguageInterpreter" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="andrei" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-              <item name="expression" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ToyLanguageInterpreter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ToyLanguageInterpreter" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="andrei" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-              <item name="expression" type="462c0819:PsiDirectoryNode" />
-              <item name="artihmetic" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ToyLanguageInterpreter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ToyLanguageInterpreter" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="andrei" type="462c0819:PsiDirectoryNode" />
-              <item name="interfaces" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ToyLanguageInterpreter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ToyLanguageInterpreter" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="andrei" type="462c0819:PsiDirectoryNode" />
-              <item name="interfaces" type="462c0819:PsiDirectoryNode" />
-              <item name="domain" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ToyLanguageInterpreter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ToyLanguageInterpreter" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="andrei" type="462c0819:PsiDirectoryNode" />
-              <item name="interfaces" type="462c0819:PsiDirectoryNode" />
-              <item name="repository" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -423,7 +401,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.appearance" />
-    <property name="SearchEverywhereHistoryKey" value="if&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/domain/statement/If.java&#10;openfi&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/domain/statement/OpenFile.java&#10;read&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/domain/expression/ReadHeap.java&#10;allocate&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/domain/statement/Allocate.java&#10;controll&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/controller/Controller.java&#10;write&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/domain/statement/WriteHeap.java&#10;repos&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/repository/Repository.java&#10;readh&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/domain/expression/ReadHeap.java&#10;wr&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/domain/statement/WriteHeap.java&#10;e4&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/e4.log&#10;main&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/Main.java&#10;heap&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/interfaces/domain/IHeap.java&#10;rune&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/view/RunExampleCommand.java&#10;idic&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/interfaces/domain/IDictionary.java&#10;e2&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/e2.log&#10;programs&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/domain/ProgramState.java&#10;Ifsta&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/domain/statement/IfStatement.java&#10;e2.&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/e2.log&#10;e2.l&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/e2.log&#10;log&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/logger.txt&#10;test.in&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/test.in&#10;text&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/view/TextMenu.java&#10;view&#9;PSI&#9;JAVA://javax.swing.text.View&#10;toyf&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/domain/ToyFile.java&#10;stack&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/domain/Stack.java&#10;comp&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/domain/statement/CompoundStatement.java&#10;print&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/domain/statement/PrintStatement.java&#10;mu&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/domain/expression/artihmetic/MultiplicationExpression.java&#10;expression&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/domain/expression/artihmetic/DivisionExpression.java&#10;sub&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/domain/expression/artihmetic/SubtractionExpression.java&#10;addi&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/domain/expression/artihmetic/AdditionExpression.java&#10;vari&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/domain/expression/VariableExpression.java&#10;varia&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/domain/exceptions/VariableException.java&#10;close&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/domain/statement/CloseFileStatement.java&#10;progra&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/domain/ProgramState.java&#10;Istate&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/domain/statement/IfStatement.java&#10;ISta&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/interfaces/domain/IStack.java&#10;con&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/controller/Controller.java&#10;repo&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/interfaces/repository/IRepository.java&#10;iDi&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/interfaces/domain/IDictionary.java&#10;controller&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/controller/Controller.java&#10;PROGRAMSTA&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/domain/ProgramState.java&#10;programstate&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/domain/ProgramState.java&#10;arithme&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/domain/expression/artihmetic/ArithmeticException.java&#10;Print&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/domain/statement/PrintStatement.java&#10;toString&#9;PSI&#9;JAVA://com.andrei.impl.domain.Dictionary#toString&#10;List&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/domain/List.java" />
+    <property name="SearchEverywhereHistoryKey" value="controll&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/controller/Controller.java&#10;whil&#9;PSI&#9;JAVA://com.andrei.impl.domain.statement.While&#10;if&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/domain/statement/If.java&#10;openfi&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/domain/statement/OpenFile.java&#10;read&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/domain/expression/ReadHeap.java&#10;allocate&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/domain/statement/Allocate.java&#10;write&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/domain/statement/WriteHeap.java&#10;repos&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/repository/Repository.java&#10;readh&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/domain/expression/ReadHeap.java&#10;wr&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/domain/statement/WriteHeap.java&#10;e4&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/e4.log&#10;main&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/Main.java&#10;heap&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/interfaces/domain/IHeap.java&#10;rune&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/view/RunExampleCommand.java&#10;idic&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/interfaces/domain/IDictionary.java&#10;e2&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/e2.log&#10;programs&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/domain/ProgramState.java&#10;Ifsta&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/domain/statement/IfStatement.java&#10;e2.&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/e2.log&#10;e2.l&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/e2.log&#10;log&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/logger.txt&#10;test.in&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/test.in&#10;text&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/view/TextMenu.java&#10;view&#9;PSI&#9;JAVA://javax.swing.text.View&#10;toyf&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/domain/ToyFile.java&#10;stack&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/domain/Stack.java&#10;comp&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/domain/statement/CompoundStatement.java&#10;print&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/domain/statement/PrintStatement.java&#10;mu&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/domain/expression/artihmetic/MultiplicationExpression.java&#10;expression&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/domain/expression/artihmetic/DivisionExpression.java&#10;sub&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/domain/expression/artihmetic/SubtractionExpression.java&#10;addi&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/domain/expression/artihmetic/AdditionExpression.java&#10;vari&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/domain/expression/VariableExpression.java&#10;varia&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/domain/exceptions/VariableException.java&#10;close&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/domain/statement/CloseFileStatement.java&#10;progra&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/domain/ProgramState.java&#10;Istate&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/domain/statement/IfStatement.java&#10;ISta&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/interfaces/domain/IStack.java&#10;con&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/controller/Controller.java&#10;repo&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/interfaces/repository/IRepository.java&#10;iDi&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/interfaces/domain/IDictionary.java&#10;controller&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/controller/Controller.java&#10;PROGRAMSTA&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/domain/ProgramState.java&#10;programstate&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/domain/ProgramState.java&#10;arithme&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/domain/expression/artihmetic/ArithmeticException.java&#10;Print&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/domain/statement/PrintStatement.java&#10;toString&#9;PSI&#9;JAVA://com.andrei.impl.domain.Dictionary#toString&#10;List&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/domain/List.java" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
@@ -492,12 +470,11 @@
     <option name="remove_strategy" value="false" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="25" width="1366" height="743" extended-state="6" />
+    <frame x="1366" y="0" width="2560" height="1080" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32810047" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -508,7 +485,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2489019" sideWeight="0.45297804" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24882813" sideWeight="0.45297804" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -521,6 +498,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291536" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32810047" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -586,46 +564,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar:///usr/lib/jvm/java-9-openjdk/lib/src.zip!/java.desktop/javax/swing/text/View.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="189" column="22" lean-forward="false" selection-start-line="189" selection-start-column="22" selection-end-line="189" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-9-openjdk/lib/src.zip!/java.base/java/lang/Runnable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="67" column="25" lean-forward="false" selection-start-line="67" selection-start-column="25" selection-end-line="67" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/andrei/impl/view/TextMenu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="22" column="73" lean-forward="false" selection-start-line="22" selection-start-column="73" selection-end-line="22" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.in">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/logger.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/andrei/impl/domain/FileTable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -644,18 +586,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/e2.log" />
-    <entry file="file://$PROJECT_DIR$/src/com/andrei/impl/domain/expression/Expression.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/andrei/impl/domain/expression/artihmetic/Addition.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="13" column="69" lean-forward="false" selection-start-line="13" selection-start-column="69" selection-end-line="13" selection-end-column="69" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -749,17 +683,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="680">
           <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/andrei/impl/domain/ProgramState.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1700">
-          <caret line="52" column="13" lean-forward="false" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -786,7 +709,7 @@
         <state relative-caret-position="714">
           <caret line="21" column="28" lean-forward="false" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -803,7 +726,7 @@
         <state relative-caret-position="476">
           <caret line="15" column="47" lean-forward="false" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -813,7 +736,7 @@
         <state relative-caret-position="34">
           <caret line="7" column="64" lean-forward="false" selection-start-line="7" selection-start-column="64" selection-end-line="7" selection-end-column="64" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -829,23 +752,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="10" column="43" lean-forward="false" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/andrei/interfaces/domain/IDictionary.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="18" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/andrei/interfaces/domain/IFileTable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -853,9 +759,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="15" column="43" lean-forward="false" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -863,7 +766,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="6" column="6" lean-forward="false" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -871,17 +773,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/andrei/impl/controller/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -897,7 +788,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -905,7 +795,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -913,7 +802,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
           <caret line="13" column="31" lean-forward="false" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -928,7 +816,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="646">
           <caret line="23" column="107" lean-forward="false" selection-start-line="23" selection-start-column="107" selection-end-line="23" selection-end-column="107" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -936,17 +823,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="263">
           <caret line="20" column="56" lean-forward="false" selection-start-line="20" selection-start-column="56" selection-end-line="20" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/andrei/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="41" column="42" lean-forward="true" selection-start-line="41" selection-start-column="42" selection-end-line="41" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -962,7 +838,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="134">
           <caret line="21" column="28" lean-forward="false" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -970,6 +845,97 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
           <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/e5.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4312">
+          <caret line="98" column="5" lean-forward="false" selection-start-line="98" selection-start-column="5" selection-end-line="98" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/andrei/impl/domain/statement/While.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="792">
+          <caret line="21" column="9" lean-forward="false" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/andrei/impl/domain/expression/Expression.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="5" column="22" lean-forward="false" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/andrei/impl/domain/expression/logic/LogicExpression.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="13" column="1" lean-forward="false" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/andrei/impl/domain/expression/logic/Equal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="616">
+          <caret line="16" column="34" lean-forward="false" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/andrei/impl/domain/ProgramState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1320">
+          <caret line="32" column="22" lean-forward="false" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/andrei/impl/controller/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1056">
+          <caret line="28" column="66" lean-forward="false" selection-start-line="28" selection-start-column="66" selection-end-line="28" selection-end-column="66" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/andrei/interfaces/domain/IFileTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="14" column="9" lean-forward="false" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/andrei/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1056">
+          <caret line="33" column="51" lean-forward="false" selection-start-line="33" selection-start-column="51" selection-end-line="33" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/andrei/interfaces/domain/IDictionary.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="20" column="11" lean-forward="false" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/andrei/impl/domain/FileTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="55" column="13" lean-forward="true" selection-start-line="55" selection-start-column="13" selection-end-line="55" selection-end-column="13" />
           <folding />
         </state>
       </provider>

@@ -5,6 +5,7 @@ import com.andrei.interfaces.domain.IDictionary;
 import com.andrei.interfaces.domain.IFileTable;
 
 import java.io.BufferedReader;
+import java.util.ArrayList;
 
 public class FileTable implements IFileTable {
     private static int NEXT_DESCRIPTOR = 1;
@@ -53,7 +54,7 @@ public class FileTable implements IFileTable {
 
     @Override
     public void closeAllFiles() {
-        this.fileDescriptors.keySet().forEach(fileDescriptor -> {
+        new ArrayList<>(fileDescriptors.keySet()).forEach(fileDescriptor -> {
             try {
                 closeFile(fileDescriptor);
             } catch (ToyException e) {

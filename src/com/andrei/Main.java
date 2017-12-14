@@ -5,6 +5,7 @@ import com.andrei.impl.domain.expression.ReadHeap;
 import com.andrei.impl.domain.expression.Variable;
 import com.andrei.impl.domain.expression.artihmetic.Addition;
 import com.andrei.impl.domain.expression.artihmetic.Subtraction;
+import com.andrei.impl.domain.expression.logic.NotEqual;
 import com.andrei.impl.domain.statement.*;
 import com.andrei.impl.view.RunExampleCommand;
 import com.andrei.impl.view.TextMenu;
@@ -30,8 +31,7 @@ public class Main {
                         new Compound(
                                 new ReadFile(new Variable("f"), "c"),
                                 new Print(new Variable("c"))),
-                        new Print(new Constant(0))),
-                new CloseFile(new Variable("f"))
+                        new Print(new Constant(0)))
         );
 
 
@@ -61,7 +61,7 @@ public class Main {
         IStatement program5 = new Compound(
                 new Assignment("v", new Constant(6)),
                 new While(
-                        new Subtraction(new Variable("v"), new Constant(4)),
+                        new NotEqual(new Variable("v"), new Constant(4)),
                         new Compound(
                                 new Print(new Variable("v")),
                                 new Assignment("v", new Subtraction(new Variable("v"), new Constant(1))))),
