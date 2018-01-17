@@ -4,7 +4,7 @@ import java.util.Collection;
 import java.util.Map;
 import java.util.Set;
 
-public interface IDictionary<K, V> {
+public interface IDictionary<K, V> extends Cloneable {
 
     V get(K key);
 
@@ -21,4 +21,6 @@ public interface IDictionary<K, V> {
     Set<K> keySet();
 
     Collection<V> valueSet();
+
+    IDictionary<K, V> clone();
 }

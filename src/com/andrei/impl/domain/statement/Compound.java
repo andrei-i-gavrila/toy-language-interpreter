@@ -1,10 +1,10 @@
 package com.andrei.impl.domain.statement;
 
 import com.andrei.impl.domain.ProgramState;
-import com.andrei.impl.domain.exceptions.ToyException;
 import com.andrei.interfaces.domain.IStatement;
 
 import java.util.Arrays;
+import java.util.Optional;
 
 public class Compound implements IStatement {
 
@@ -24,8 +24,11 @@ public class Compound implements IStatement {
     }
 
     @Override
-    public void execute(ProgramState state) throws ArithmeticException {
-        statements.stream().forEach(state.getExecutionStack()::push);
+    public Optional<ProgramState> execute(ProgramState state) throws ArithmeticException {
+        state.getExecutionStack().push(nextStatement);
+        state.getExecutionStack().push(thisStatement);
+        
+        return Optional.empty();
     }
 
     @Override

@@ -1,4 +1,4 @@
-package com.andrei.impl.view;
+package com.andrei.impl.view.text;
 
 import java.util.Scanner;
 

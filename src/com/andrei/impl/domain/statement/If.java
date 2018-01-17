@@ -5,6 +5,8 @@ import com.andrei.impl.domain.exceptions.ToyException;
 import com.andrei.impl.domain.expression.Expression;
 import com.andrei.interfaces.domain.IStatement;
 
+import java.util.Optional;
+
 public class If implements IStatement {
 
     final Expression condition;
@@ -24,14 +26,14 @@ public class If implements IStatement {
     }
 
     @Override
-    public ProgramState execute(ProgramState state) throws ToyException {
+    public Optional<ProgramState> execute(ProgramState state) throws ToyException {
         if (condition.evaluate(state) != 0) {
             state.getExecutionStack().push(thenStatement);
         } else if (elseStatement != null) {
             state.getExecutionStack().push(elseStatement);
         }
 
-        return state;
+        return Optional.empty();
     }
 
     @Override

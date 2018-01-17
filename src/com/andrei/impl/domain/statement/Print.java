@@ -5,6 +5,8 @@ import com.andrei.impl.domain.expression.Expression;
 import com.andrei.impl.domain.ProgramState;
 import com.andrei.interfaces.domain.IStatement;
 
+import java.util.Optional;
+
 public class Print implements IStatement{
 
     final Expression expression;
@@ -14,10 +16,10 @@ public class Print implements IStatement{
     }
 
     @Override
-    public ProgramState execute(ProgramState state) throws ToyException {
-        state.getOutput().add(expression.evaluate(state).toString());
+    public Optional<ProgramState> execute(ProgramState state) throws ToyException {
+        state.getOutput().add(expression.evaluate(state).toString() + " ");
 
-        return state;
+        return Optional.empty();
     }
 
     @Override

@@ -7,8 +7,8 @@ import com.andrei.impl.domain.expression.artihmetic.Addition;
 import com.andrei.impl.domain.expression.artihmetic.Subtraction;
 import com.andrei.impl.domain.expression.logic.NotEqual;
 import com.andrei.impl.domain.statement.*;
-import com.andrei.impl.view.RunExampleCommand;
-import com.andrei.impl.view.TextMenu;
+import com.andrei.impl.view.text.RunExampleCommand;
+import com.andrei.impl.view.text.TextMenu;
 import com.andrei.interfaces.domain.IStatement;
 
 public class Main {
@@ -68,12 +68,26 @@ public class Main {
                 new Print(new Variable("v"))
         );
 
+        IStatement program6 = new Compound(
+                new Assignment("v", new Constant(10)),
+                new Allocate("a", new Constant(22)),
+                new Fork(new Compound(
+                        new WriteHeap("a", new Constant(30)),
+                        new Assignment("v", new Constant(32)),
+                        new Print(new Variable("v")),
+                        new Print(new ReadHeap(new Variable("a")))
+                )),
+                new Print(new Variable("v")),
+                new Print(new ReadHeap(new Variable("a")))
+        );
+
         new TextMenu("default", "Starting point",
                 new RunExampleCommand("e1", program1),
                 new RunExampleCommand("e2", program2),
                 new RunExampleCommand("e3", program3),
                 new RunExampleCommand("e4", program4),
-                new RunExampleCommand("e5", program5)
+                new RunExampleCommand("e5", program5),
+                new RunExampleCommand("e6", program6)
         ).run();
     }
 }

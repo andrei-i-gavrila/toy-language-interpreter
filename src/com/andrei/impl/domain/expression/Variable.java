@@ -14,7 +14,7 @@ public class Variable extends Expression {
 
     @Override
     public Integer evaluate(ProgramState programState) throws ToyException {
-        if (!programState.getSymbolTable().containsKey(variable)) {
+        if (!programState.getSymbolTable().has(variable)) {
             throw new VariableException("Variable " + variable + " does not exist!");
         }
         return programState.getSymbolTable().get(variable);

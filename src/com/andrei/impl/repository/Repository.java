@@ -21,13 +21,15 @@ public class Repository implements IRepository {
     }
 
     @Override
-    public void logCurrentProgramState(ProgramState state) throws IOException {
-        new PrintWriter(new BufferedWriter(new FileWriter(logFilePath, true)))
-                .append(Thread.currentThread().getName())
-                .append("\n")
-                .append(state.toString())
-                .append("\n\n\n")
-                .close();
+    public void logProgramState(ProgramState state) {
+        try {
+            new PrintWriter(new BufferedWriter(new FileWriter(logFilePath, true)))
+                    .append(state.toString())
+                    .append("\n\n")
+                    .close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     public List<ProgramState> getProgramStates() {

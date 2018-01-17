@@ -5,6 +5,8 @@ import com.andrei.impl.domain.exceptions.ToyException;
 import com.andrei.impl.domain.expression.Expression;
 import com.andrei.interfaces.domain.IStatement;
 
+import java.util.Optional;
+
 public class CloseFile implements IStatement {
     private final Expression fileDescriptorExpression;
 
@@ -13,11 +15,11 @@ public class CloseFile implements IStatement {
     }
 
     @Override
-    public ProgramState execute(ProgramState state) throws ToyException {
+    public Optional<ProgramState> execute(ProgramState state) throws ToyException {
         int fileDescriptor = fileDescriptorExpression.evaluate(state);
         state.getFileTable().closeFile(fileDescriptor);
 
-        return state;
+        return Optional.empty();
     }
 
     @Override

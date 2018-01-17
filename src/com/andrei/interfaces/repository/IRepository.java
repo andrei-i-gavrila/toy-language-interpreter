@@ -11,5 +11,5 @@ public interface IRepository {
 
     List<ProgramState> getProgramStates();
 
-    void logCurrentProgramState(ProgramState state) throws IOException;
+    void logProgramState(ProgramState state);
 }

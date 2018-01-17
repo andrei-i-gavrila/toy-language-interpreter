@@ -7,6 +7,7 @@ import com.andrei.interfaces.domain.IFileTable;
 import com.andrei.interfaces.domain.IStatement;
 
 import java.io.IOException;
+import java.util.Optional;
 
 public class ReadFile implements IStatement {
 
@@ -19,13 +20,13 @@ public class ReadFile implements IStatement {
     }
 
     @Override
-    public ProgramState execute(ProgramState state) throws ToyException {
+    public Optional<ProgramState> execute(ProgramState state) throws ToyException {
         IFileTable fileTable = state.getFileTable();
         int fileDescriptor = fileDescriptorExpression.evaluate(state);
 
         String line;
         try {
-            line = fileTable.getFileReader(fileDescriptor).readLine();
+w            line = fileTable.getFileReader(fileDescriptor).readLine();
             if (line == null) {
                 throw new ToyException("File with fd " + fileDescriptor + " has no input left");
             }
@@ -36,7 +37,7 @@ public class ReadFile implements IStatement {
         Integer readValue = line.isEmpty() ? 0 : Integer.parseInt(line);
         state.getSymbolTable().put(var, readValue);
 
-        return state;
+        return Optional.empty();
     }
 
     @Override

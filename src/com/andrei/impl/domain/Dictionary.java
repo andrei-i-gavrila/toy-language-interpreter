@@ -9,7 +9,11 @@ import java.util.Set;
 
 public class Dictionary<K, V> implements IDictionary<K, V> {
 
-    private final Map<K, V> map = new HashMap<>();
+    private final Map<K, V> map;
+
+    public Dictionary() {
+        this.map = new HashMap<>();
+    }
 
     @Override
     public V get(K key) {
@@ -56,5 +60,12 @@ public class Dictionary<K, V> implements IDictionary<K, V> {
     @Override
     public Collection<V> valueSet() {
         return map.values();
+    }
+
+    @Override
+    public IDictionary<K, V> clone() {
+        IDictionary<K, V> cloned = new Dictionary<>();
+        map.forEach(cloned::put);
+        return cloned;
     }
 }

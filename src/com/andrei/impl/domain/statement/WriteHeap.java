@@ -6,6 +6,8 @@ import com.andrei.impl.domain.expression.Expression;
 import com.andrei.impl.domain.expression.Variable;
 import com.andrei.interfaces.domain.IStatement;
 
+import java.util.Optional;
+
 public class WriteHeap implements IStatement {
     String variable;
     Expression valueExpression;
@@ -17,10 +19,10 @@ public class WriteHeap implements IStatement {
 
 
     @Override
-    public ProgramState execute(ProgramState state) throws ToyException {
+    public Optional<ProgramState> execute(ProgramState state) throws ToyException {
         state.getHeap().write(new Variable(variable).evaluate(state), valueExpression.evaluate(state));
 
-        return state;
+        return Optional.empty();
     }
 
     @Override

@@ -3,20 +3,21 @@ package com.andrei.impl.domain;
 import com.andrei.impl.domain.exceptions.ToyException;
 import com.andrei.interfaces.domain.*;
 
-import java.io.IOException;
 import java.util.List;
-import java.util.Map;
+import java.util.Optional;
 import java.util.stream.Stream;
 
 public class ProgramState {
 
+    private int threadId;
     private final Stack<IStatement> executionStack;
-    private final Map<String, Integer> symbolTable;
+    private final IDictionary<String, Integer> symbolTable;
     private final List<String> output;
     private final IFileTable fileTable;
     private final IHeap heap;
 
     public ProgramState(IStatement startStatement) {
+        threadId = 1;
         executionStack = new Stack<>();
         executionStack.push(startStatement);
 
@@ -26,15 +27,18 @@ public class ProgramState {
         heap = new Heap();
     }
 
-    public ProgramState(Stack<IStatement> executionStack, Map<String, Integer> symbolTable, List<String> output, IFileTable fileTable, IHeap heap) {
-        this.executionStack = executionStack;
-        this.symbolTable = symbolTable;
-        this.output = output;
-        this.fileTable = fileTable;
-        this.heap = heap;
+    public ProgramState(IStatement forkedStatement, ProgramState clonedProgramState) {
+        threadId = clonedProgramState.threadId * 10;
+        executionStack = new Stack<>();
+        executionStack.push(forkedStatement);
+
+        symbolTable = clonedProgramState.symbolTable.clone();
+        output = clonedProgramState.output;
+        fileTable = clonedProgramState.fileTable;
+        heap = clonedProgramState.heap;
     }
 
-    public ProgramState oneStep() throws ToyException {
+    public Optional<ProgramState> oneStep() throws ToyException {
         return executionStack.pop().execute(this);
     }
 
@@ -46,7 +50,7 @@ public class ProgramState {
         return executionStack;
     }
 
-    public Map<String, Integer> getSymbolTable() {
+    public IDictionary<String, Integer> getSymbolTable() {
         return symbolTable;
     }
 
@@ -58,11 +62,21 @@ public class ProgramState {
         return heap;
     }
 
+    public boolean isNotCompleted() {
+        return !executionStack.empty();
+    }
+
     @Override
     public String toString() {
-        return Stream.of(executionStack, symbolTable, output, fileTable, heap)
-                .reduce((acc, o) -> acc.toString() + '\n' + o.getClass().getSimpleName() + ":\n" + o.toString())
-                .orElse("No state")
-                .toString();
+        return String.format(
+                "ProgramState %d:\nExecution Stack:\n%s\nSymbol Table:\n%s\nOutput:\n%s\nFileTable:\n%s\nHeap:\n%s",
+                threadId,
+                executionStack.toString(),
+                symbolTable.toString(),
+                output.toString(),
+                fileTable.toString(),
+                heap.toString()
+        );
+
     }
 }
