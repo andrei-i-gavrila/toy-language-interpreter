@@ -5,27 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2b3e013a-f134-4e22-8acb-7846790fa832" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/andrei/impl/view/Programs.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/andrei/impl/view/gui/InterpreterView.fxml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/andrei/impl/view/gui/InterpreterViewController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/andrei/impl/view/gui/ProgramSelectorViewController.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/andrei/Main.java" afterPath="$PROJECT_DIR$/src/com/andrei/impl/view/text/MainText.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/andrei/impl/view/gui/InterpreterGUI.java" afterPath="$PROJECT_DIR$/src/com/andrei/impl/view/gui/MainGUI.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/andrei/impl/view/gui/interpreter.fxml" afterPath="$PROJECT_DIR$/src/com/andrei/impl/view/gui/ProgramSelectorView.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/andrei/impl/controller/Controller.java" afterPath="$PROJECT_DIR$/src/com/andrei/impl/controller/Controller.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/andrei/impl/domain/Dictionary.java" afterPath="$PROJECT_DIR$/src/com/andrei/impl/domain/Dictionary.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/andrei/impl/domain/FileTable.java" afterPath="$PROJECT_DIR$/src/com/andrei/impl/domain/FileTable.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/andrei/impl/domain/Heap.java" afterPath="$PROJECT_DIR$/src/com/andrei/impl/domain/Heap.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/andrei/impl/domain/ProgramState.java" afterPath="$PROJECT_DIR$/src/com/andrei/impl/domain/ProgramState.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/andrei/impl/domain/ToyFile.java" afterPath="$PROJECT_DIR$/src/com/andrei/impl/domain/ToyFile.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/andrei/impl/domain/expression/Variable.java" afterPath="$PROJECT_DIR$/src/com/andrei/impl/domain/expression/Variable.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/andrei/impl/domain/statement/ReadFile.java" afterPath="$PROJECT_DIR$/src/com/andrei/impl/domain/statement/ReadFile.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/andrei/impl/repository/Repository.java" afterPath="$PROJECT_DIR$/src/com/andrei/impl/repository/Repository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/andrei/interfaces/domain/IDictionary.java" afterPath="$PROJECT_DIR$/src/com/andrei/interfaces/domain/IDictionary.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/andrei/interfaces/domain/IFileTable.java" afterPath="$PROJECT_DIR$/src/com/andrei/interfaces/domain/IFileTable.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/andrei/interfaces/repository/IRepository.java" afterPath="$PROJECT_DIR$/src/com/andrei/interfaces/repository/IRepository.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/andrei/impl/view/gui/InterpreterViewController.java" afterPath="$PROJECT_DIR$/src/com/andrei/impl/view/gui/InterpreterViewController.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,32 +23,22 @@
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="InterpreterView.fxml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/andrei/impl/view/gui/InterpreterView.fxml">
-          <provider editor-type-id="JavaFX-Scene-Builder">
-            <state />
-          </provider>
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+              <caret line="52" column="23" lean-forward="false" selection-start-line="52" selection-start-column="23" selection-end-line="52" selection-end-column="23" />
               <folding />
             </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder">
+            <state />
           </provider>
         </entry>
       </file>
       <file leaf-file-name="InterpreterViewController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/andrei/impl/view/gui/InterpreterViewController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="79" column="37" lean-forward="true" selection-start-line="79" selection-start-column="37" selection-end-line="79" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ListBinding.class" pinned="false" current-in-tab="false">
-        <entry file="jar:///usr/lib/jvm/java-8-openjdk/jre/lib/ext/jfxrt.jar!/javafx/beans/binding/ListBinding.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-63">
-              <caret line="79" column="25" lean-forward="false" selection-start-line="79" selection-start-column="25" selection-end-line="79" selection-end-column="25" />
+            <state relative-caret-position="-1530">
+              <caret line="67" column="43" lean-forward="true" selection-start-line="67" selection-start-column="43" selection-end-line="67" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -76,28 +47,8 @@
       <file leaf-file-name="Repository.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/andrei/impl/repository/Repository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="38" column="24" lean-forward="false" selection-start-line="38" selection-start-column="24" selection-end-line="38" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Collection.class" pinned="false" current-in-tab="false">
-        <entry file="jar:///usr/lib/jvm/java-8-openjdk/jre/lib/rt.jar!/java/util/Collection.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="34" column="20" lean-forward="false" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Iterator.class" pinned="false" current-in-tab="false">
-        <entry file="jar:///usr/lib/jvm/java-8-openjdk/jre/lib/rt.jar!/java/util/Iterator.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="14" column="17" lean-forward="false" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+            <state relative-caret-position="316">
+              <caret line="33" column="9" lean-forward="true" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -106,7 +57,7 @@
       <file leaf-file-name="Controller.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/andrei/impl/controller/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1370">
+            <state relative-caret-position="520">
               <caret line="61" column="23" lean-forward="false" selection-start-line="61" selection-start-column="23" selection-end-line="61" selection-end-column="23" />
               <folding />
             </state>
@@ -116,8 +67,8 @@
       <file leaf-file-name="RunExampleCommand.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/andrei/impl/view/text/RunExampleCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="316">
-              <caret line="24" column="3" lean-forward="true" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="3" />
+            <state relative-caret-position="714">
+              <caret line="24" column="3" lean-forward="false" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -126,7 +77,7 @@
       <file leaf-file-name="IRepository.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/andrei/interfaces/repository/IRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="146">
+            <state relative-caret-position="204">
               <caret line="10" column="40" lean-forward="false" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
               <folding />
             </state>
@@ -136,7 +87,7 @@
       <file leaf-file-name="ToyFile.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/andrei/impl/domain/ToyFile.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
+            <state relative-caret-position="204">
               <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="17" />
               <folding />
             </state>
@@ -307,6 +258,109 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <expand>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="ToyLanguageInterpreter" type="cbb8eebc:String" user="ToyLanguageInterpreter" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="ToyLanguageInterpreter" type="cbb8eebc:String" user="ToyLanguageInterpreter" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="ToyLanguageInterpreter" type="cbb8eebc:String" user="ToyLanguageInterpreter" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="com/andrei" type="cbb8eebc:String" user="com/andrei" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="ToyLanguageInterpreter" type="cbb8eebc:String" user="ToyLanguageInterpreter" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="com/andrei" type="cbb8eebc:String" user="com/andrei" />
+              <item name="impl" type="cbb8eebc:String" user="impl" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="ToyLanguageInterpreter" type="cbb8eebc:String" user="ToyLanguageInterpreter" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="com/andrei" type="cbb8eebc:String" user="com/andrei" />
+              <item name="impl" type="cbb8eebc:String" user="impl" />
+              <item name="view" type="cbb8eebc:String" user="view" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="ToyLanguageInterpreter" type="cbb8eebc:String" user="ToyLanguageInterpreter" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="com/andrei" type="cbb8eebc:String" user="com/andrei" />
+              <item name="interfaces" type="cbb8eebc:String" user="interfaces" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="ToyLanguageInterpreter" type="58d84e3e:PackageViewProjectNode" />
+              <item name="ToyLanguageInterpreter" type="616d4139:PackageViewModuleNode" />
+            </path>
+            <path>
+              <item name="ToyLanguageInterpreter" type="58d84e3e:PackageViewProjectNode" />
+              <item name="ToyLanguageInterpreter" type="616d4139:PackageViewModuleNode" />
+              <item name="com.andrei" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="ToyLanguageInterpreter" type="58d84e3e:PackageViewProjectNode" />
+              <item name="ToyLanguageInterpreter" type="616d4139:PackageViewModuleNode" />
+              <item name="com.andrei" type="1f31426a:PackageElementNode" />
+              <item name="impl" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="ToyLanguageInterpreter" type="58d84e3e:PackageViewProjectNode" />
+              <item name="ToyLanguageInterpreter" type="616d4139:PackageViewModuleNode" />
+              <item name="com.andrei" type="1f31426a:PackageElementNode" />
+              <item name="impl" type="1f31426a:PackageElementNode" />
+              <item name="domain" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="ToyLanguageInterpreter" type="58d84e3e:PackageViewProjectNode" />
+              <item name="ToyLanguageInterpreter" type="616d4139:PackageViewModuleNode" />
+              <item name="com.andrei" type="1f31426a:PackageElementNode" />
+              <item name="impl" type="1f31426a:PackageElementNode" />
+              <item name="domain" type="1f31426a:PackageElementNode" />
+              <item name="statement" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="ToyLanguageInterpreter" type="58d84e3e:PackageViewProjectNode" />
+              <item name="ToyLanguageInterpreter" type="616d4139:PackageViewModuleNode" />
+              <item name="com.andrei" type="1f31426a:PackageElementNode" />
+              <item name="impl" type="1f31426a:PackageElementNode" />
+              <item name="view.text" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="ToyLanguageInterpreter" type="58d84e3e:PackageViewProjectNode" />
+              <item name="ToyLanguageInterpreter" type="616d4139:PackageViewModuleNode" />
+              <item name="com.andrei" type="1f31426a:PackageElementNode" />
+              <item name="interfaces" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="ToyLanguageInterpreter" type="58d84e3e:PackageViewProjectNode" />
+              <item name="ToyLanguageInterpreter" type="616d4139:PackageViewModuleNode" />
+              <item name="com.andrei" type="1f31426a:PackageElementNode" />
+              <item name="interfaces" type="1f31426a:PackageElementNode" />
+              <item name="domain" type="1f31426a:PackageElementNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -380,109 +434,6 @@
               <item name="andrei" type="462c0819:PsiDirectoryNode" />
               <item name="interfaces" type="462c0819:PsiDirectoryNode" />
               <item name="domain" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scratches" />
-      <pane id="AndroidView" />
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <expand>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="ToyLanguageInterpreter" type="cbb8eebc:String" user="ToyLanguageInterpreter" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="ToyLanguageInterpreter" type="cbb8eebc:String" user="ToyLanguageInterpreter" />
-              <item name="src" type="cbb8eebc:String" user="src" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="ToyLanguageInterpreter" type="cbb8eebc:String" user="ToyLanguageInterpreter" />
-              <item name="src" type="cbb8eebc:String" user="src" />
-              <item name="com/andrei" type="cbb8eebc:String" user="com/andrei" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="ToyLanguageInterpreter" type="cbb8eebc:String" user="ToyLanguageInterpreter" />
-              <item name="src" type="cbb8eebc:String" user="src" />
-              <item name="com/andrei" type="cbb8eebc:String" user="com/andrei" />
-              <item name="impl" type="cbb8eebc:String" user="impl" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="ToyLanguageInterpreter" type="cbb8eebc:String" user="ToyLanguageInterpreter" />
-              <item name="src" type="cbb8eebc:String" user="src" />
-              <item name="com/andrei" type="cbb8eebc:String" user="com/andrei" />
-              <item name="impl" type="cbb8eebc:String" user="impl" />
-              <item name="view" type="cbb8eebc:String" user="view" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="ToyLanguageInterpreter" type="cbb8eebc:String" user="ToyLanguageInterpreter" />
-              <item name="src" type="cbb8eebc:String" user="src" />
-              <item name="com/andrei" type="cbb8eebc:String" user="com/andrei" />
-              <item name="interfaces" type="cbb8eebc:String" user="interfaces" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="ToyLanguageInterpreter" type="58d84e3e:PackageViewProjectNode" />
-              <item name="ToyLanguageInterpreter" type="616d4139:PackageViewModuleNode" />
-            </path>
-            <path>
-              <item name="ToyLanguageInterpreter" type="58d84e3e:PackageViewProjectNode" />
-              <item name="ToyLanguageInterpreter" type="616d4139:PackageViewModuleNode" />
-              <item name="com.andrei" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="ToyLanguageInterpreter" type="58d84e3e:PackageViewProjectNode" />
-              <item name="ToyLanguageInterpreter" type="616d4139:PackageViewModuleNode" />
-              <item name="com.andrei" type="1f31426a:PackageElementNode" />
-              <item name="impl" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="ToyLanguageInterpreter" type="58d84e3e:PackageViewProjectNode" />
-              <item name="ToyLanguageInterpreter" type="616d4139:PackageViewModuleNode" />
-              <item name="com.andrei" type="1f31426a:PackageElementNode" />
-              <item name="impl" type="1f31426a:PackageElementNode" />
-              <item name="domain" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="ToyLanguageInterpreter" type="58d84e3e:PackageViewProjectNode" />
-              <item name="ToyLanguageInterpreter" type="616d4139:PackageViewModuleNode" />
-              <item name="com.andrei" type="1f31426a:PackageElementNode" />
-              <item name="impl" type="1f31426a:PackageElementNode" />
-              <item name="domain" type="1f31426a:PackageElementNode" />
-              <item name="statement" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="ToyLanguageInterpreter" type="58d84e3e:PackageViewProjectNode" />
-              <item name="ToyLanguageInterpreter" type="616d4139:PackageViewModuleNode" />
-              <item name="com.andrei" type="1f31426a:PackageElementNode" />
-              <item name="impl" type="1f31426a:PackageElementNode" />
-              <item name="view.text" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="ToyLanguageInterpreter" type="58d84e3e:PackageViewProjectNode" />
-              <item name="ToyLanguageInterpreter" type="616d4139:PackageViewModuleNode" />
-              <item name="com.andrei" type="1f31426a:PackageElementNode" />
-              <item name="interfaces" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="ToyLanguageInterpreter" type="58d84e3e:PackageViewProjectNode" />
-              <item name="ToyLanguageInterpreter" type="616d4139:PackageViewModuleNode" />
-              <item name="com.andrei" type="1f31426a:PackageElementNode" />
-              <item name="interfaces" type="1f31426a:PackageElementNode" />
-              <item name="domain" type="1f31426a:PackageElementNode" />
             </path>
           </expand>
           <select />
@@ -608,9 +559,8 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2602118" sideWeight="0.45297804" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26399395" sideWeight="0.45297804" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -623,6 +573,7 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291536" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -692,7 +643,8 @@
     <MESSAGE value="Refactor to allow nicer code." />
     <MESSAGE value="Remove some lines" />
     <MESSAGE value="Starting lab 8" />
-    <option name="LAST_COMMIT_MESSAGE" value="Starting lab 8" />
+    <MESSAGE value="Somewhat finished" />
+    <option name="LAST_COMMIT_MESSAGE" value="Somewhat finished" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -721,7 +673,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="131">
           <caret line="15" column="56" lean-forward="false" selection-start-line="15" selection-start-column="56" selection-end-line="15" selection-end-column="56" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -729,7 +680,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="141">
           <caret line="11" column="22" lean-forward="false" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -737,7 +687,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="7" column="45" lean-forward="true" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="45" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -745,7 +694,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-4284">
           <caret line="14" column="22" lean-forward="false" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -753,7 +701,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-267">
           <caret line="174" column="24" lean-forward="false" selection-start-line="174" selection-start-column="24" selection-end-line="174" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -761,7 +708,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="492">
           <caret line="25" column="11" lean-forward="false" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -769,7 +715,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="196">
           <caret line="17" column="55" lean-forward="false" selection-start-line="17" selection-start-column="55" selection-end-line="17" selection-end-column="55" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -777,7 +722,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="196">
           <caret line="15" column="86" lean-forward="true" selection-start-line="15" selection-start-column="86" selection-end-line="15" selection-end-column="86" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -785,7 +729,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="196">
           <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -809,7 +752,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="12478">
           <caret line="430" column="32" lean-forward="false" selection-start-line="430" selection-start-column="32" selection-end-line="430" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -817,7 +759,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="196">
           <caret line="35" column="13" lean-forward="false" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -841,7 +782,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="9" column="9" lean-forward="false" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -865,7 +805,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="141">
           <caret line="255" column="23" lean-forward="false" selection-start-line="255" selection-start-column="23" selection-end-line="255" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -881,7 +820,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="141">
           <caret line="17" column="17" lean-forward="false" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -897,7 +835,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
           <caret line="17" column="12" lean-forward="false" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -913,7 +850,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="129">
           <caret line="16" column="55" lean-forward="false" selection-start-line="16" selection-start-column="55" selection-end-line="16" selection-end-column="55" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -921,7 +857,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -929,7 +864,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="141">
           <caret line="75" column="26" lean-forward="true" selection-start-line="75" selection-start-column="26" selection-end-line="75" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -945,7 +879,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-150">
           <caret line="2207" column="20" lean-forward="true" selection-start-line="2207" selection-start-column="20" selection-end-line="2207" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -953,7 +886,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -961,7 +893,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="141">
           <caret line="61" column="9" lean-forward="false" selection-start-line="61" selection-start-column="9" selection-end-line="61" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -969,7 +900,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="23" column="12" lean-forward="false" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -977,7 +907,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="39">
           <caret line="1723" column="23" lean-forward="false" selection-start-line="1723" selection-start-column="23" selection-end-line="1723" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -985,7 +914,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="254">
           <caret line="103" column="20" lean-forward="true" selection-start-line="103" selection-start-column="20" selection-end-line="103" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -993,7 +921,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="141">
           <caret line="143" column="19" lean-forward="false" selection-start-line="143" selection-start-column="19" selection-end-line="143" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1001,7 +928,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-63">
           <caret line="23" column="11" lean-forward="false" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1009,7 +935,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1017,18 +942,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="196">
           <caret line="10" column="11" lean-forward="false" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/andrei/impl/view/gui/InterpreterView.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1036,7 +949,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="141">
           <caret line="47" column="25" lean-forward="false" selection-start-line="47" selection-start-column="25" selection-end-line="47" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1044,7 +956,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="447">
           <caret line="34" column="16" lean-forward="false" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1058,7 +969,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/andrei/impl/domain/ToyFile.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
+        <state relative-caret-position="204">
           <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="17" />
           <folding />
         </state>
@@ -1066,24 +977,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/andrei/impl/view/text/RunExampleCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="24" column="3" lean-forward="true" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/andrei/impl/controller/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1370">
-          <caret line="61" column="23" lean-forward="false" selection-start-line="61" selection-start-column="23" selection-end-line="61" selection-end-column="23" />
+        <state relative-caret-position="714">
+          <caret line="24" column="3" lean-forward="false" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="3" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/andrei/interfaces/repository/IRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
+        <state relative-caret-position="204">
           <caret line="10" column="40" lean-forward="false" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/andrei/impl/view/gui/InterpreterView.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="52" column="23" lean-forward="false" selection-start-line="52" selection-start-column="23" selection-end-line="52" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="jar:///usr/lib/jvm/java-8-openjdk/jre/lib/rt.jar!/java/util/Collection.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="34" column="20" lean-forward="false" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
           <folding />
         </state>
       </provider>
@@ -1096,34 +1018,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///usr/lib/jvm/java-8-openjdk/jre/lib/rt.jar!/java/util/Collection.class">
+    <entry file="file://$PROJECT_DIR$/src/com/andrei/impl/controller/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="34" column="20" lean-forward="false" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/andrei/impl/repository/Repository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="38" column="24" lean-forward="false" selection-start-line="38" selection-start-column="24" selection-end-line="38" selection-end-column="24" />
+        <state relative-caret-position="520">
+          <caret line="61" column="23" lean-forward="false" selection-start-line="61" selection-start-column="23" selection-end-line="61" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="jar:///usr/lib/jvm/java-8-openjdk/jre/lib/ext/jfxrt.jar!/javafx/beans/binding/ListBinding.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-63">
+        <state relative-caret-position="34">
           <caret line="79" column="25" lean-forward="false" selection-start-line="79" selection-start-column="25" selection-end-line="79" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/andrei/impl/repository/Repository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="33" column="9" lean-forward="true" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/andrei/impl/view/gui/InterpreterViewController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="79" column="37" lean-forward="true" selection-start-line="79" selection-start-column="37" selection-end-line="79" selection-end-column="37" />
+        <state relative-caret-position="-1530">
+          <caret line="67" column="43" lean-forward="true" selection-start-line="67" selection-start-column="43" selection-end-line="67" selection-end-column="43" />
           <folding />
         </state>
       </provider>

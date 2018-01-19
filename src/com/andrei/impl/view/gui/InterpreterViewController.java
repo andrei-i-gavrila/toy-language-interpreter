@@ -14,6 +14,7 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.scene.control.*;
+import javafx.stage.Stage;
 
 import java.util.Collections;
 import java.util.Map;
@@ -48,12 +49,6 @@ public class InterpreterViewController {
         render();
     }
 
-    private void renderProgramStates() {
-//        numberProgramStates.setText(String.valueOf(repository.getProgramStates().size()));
-//        programListsIdentifiers.getItems().setAll(repository.getProgramStates().stream().map(ProgramState::getThreadId).map(Object::toString).collect(Collectors.toList()));
-//        programListsIdentifiers.getSelectionModel().select(String.valueOf(activeProgramState.getThreadId()));
-    }
-
     private void initializeBindings() {
         numberProgramStates.textProperty().bind(Bindings.size(repository.getProgramStates()).asString());
         programListsIdentifiers.setItems(new ListBinding<String>() {
@@ -66,6 +61,22 @@ public class InterpreterViewController {
                 return FXCollections.observableList(repository.getProgramStates().stream().map(ProgramState::getThreadId).map(String::valueOf).collect(Collectors.toList()));
             }
         });
+
+        programListsIdentifiers.getSelectionModel().select(0);
+        programListsIdentifiers.getSelectionModel().selectedItemProperty().addListener(
+                (observableValue, oldValue, newValue) -> {
+                    if (newValue == null) {
+                        if (repository.getProgramStates().size() > 0) {
+                            activeProgramState = repository.getProgramStates().get(0);
+                            programListsIdentifiers.getSelectionModel().select(0);
+                        }
+                    }
+                    activeProgramState = repository.getProgramStates().stream().filter(
+                            programState -> Objects.equals(newValue, String.valueOf(programState.getThreadId()))
+                    ).findFirst().orElse(activeProgramState);
+                    render();
+                }
+        );
 
         addressColumn.setCellValueFactory(cellData -> new SimpleIntegerProperty(cellData.getValue().getKey()).asObject());
         heapValueColumn.setCellValueFactory(cellData -> new SimpleIntegerProperty(cellData.getValue().getValue()).asObject());
@@ -104,25 +115,26 @@ public class InterpreterViewController {
         Collections.reverse(executionStack.getItems());
     }
 
-    public void runOneStep(ActionEvent actionEvent) {
-        try {
-            controller.oneStep();
-            render();
-        } catch (Exception e) {
-            e.printStackTrace();
-            Alert alert = new Alert(Alert.AlertType.WARNING);
-            alert.setHeaderText(e.getClass().getSimpleName());
-            alert.setContentText(e.getMessage());
-            alert.showAndWait();
+    public void runOneStep(ActionEvent actionEvent) throws InterruptedException {
+        boolean done = controller.oneStep();
+        render();
+        if (done) {
+            showDoneMessage();
         }
     }
 
+    private void showDoneMessage() {
+        Alert done = new Alert(Alert.AlertType.INFORMATION);
+        done.setHeaderText("Job done");
+        done.showAndWait();
+        ((Stage) heapTable.getScene().getWindow()).close();
+    }
+
     private void render() {
-        renderProgramStates();
+        renderExecutionStack();
         renderOutList();
         renderSymbolTable();
         renderHeapTable();
-        renderExecutionStack();
         renderFileTable();
     }
 }
