@@ -1,4 +1,4 @@
-package com.andrei;
+package com.andrei.impl.view.text;
 
 import com.andrei.impl.domain.expression.Constant;
 import com.andrei.impl.domain.expression.ReadHeap;
@@ -11,7 +11,7 @@ import com.andrei.impl.view.text.RunExampleCommand;
 import com.andrei.impl.view.text.TextMenu;
 import com.andrei.interfaces.domain.IStatement;
 
-public class Main {
+public class MainText {
 
     public static void main(String[] args) {
         IStatement program1 = new Compound(

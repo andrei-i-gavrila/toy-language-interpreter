@@ -1,8 +1,11 @@
 package com.andrei.interfaces.domain;
 
+import com.andrei.impl.domain.ToyFile;
 import com.andrei.impl.domain.exceptions.ToyException;
 
 import java.io.BufferedReader;
+import java.util.Collection;
+import java.util.List;
 
 public interface IFileTable {
 
@@ -13,4 +16,6 @@ public interface IFileTable {
     BufferedReader getFileReader(Integer fileDescriptor) throws ToyException;
 
     void closeAllFiles();
+
+    Collection<ToyFile> getAllFiles();
 }

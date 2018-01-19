@@ -26,7 +26,7 @@ public class ReadFile implements IStatement {
 
         String line;
         try {
-w            line = fileTable.getFileReader(fileDescriptor).readLine();
+            line = fileTable.getFileReader(fileDescriptor).readLine();
             if (line == null) {
                 throw new ToyException("File with fd " + fileDescriptor + " has no input left");
             }

@@ -6,11 +6,12 @@ import com.andrei.interfaces.domain.IHeap;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
+import java.util.concurrent.atomic.AtomicReference;
 
 public class Heap implements IHeap {
     public static final Integer NULL = 0;
     Map<Integer, Integer> heap;
-    private Integer LAST_ADDRESS = 1;
+    private final AtomicReference<Integer> LAST_ADDRESS = new AtomicReference<>(1);
 
     public Heap() {
         this.heap = new HashMap<>();
@@ -18,12 +19,12 @@ public class Heap implements IHeap {
 
     public Heap(Map<Integer, Integer> heap) {
         this.heap = heap;
-        LAST_ADDRESS = heap.keySet().stream().max((o1, o2) -> o1 > o2 ? o1 : o2).orElse(0) + 1;
+        LAST_ADDRESS.set(heap.keySet().stream().max((o1, o2) -> o1 > o2 ? o1 : o2).orElse(0) + 1);
     }
 
     @Override
     public Integer allocate() {
-        Integer usedAddress = LAST_ADDRESS++;
+        Integer usedAddress = LAST_ADDRESS.getAndSet(LAST_ADDRESS.get() + 1);
         heap.put(usedAddress, NULL);
 
         return usedAddress;

@@ -6,6 +6,7 @@ import com.andrei.interfaces.domain.IFileTable;
 
 import java.io.BufferedReader;
 import java.util.ArrayList;
+import java.util.Collection;
 
 public class FileTable implements IFileTable {
     private static int NEXT_DESCRIPTOR = 1;
@@ -20,7 +21,7 @@ public class FileTable implements IFileTable {
     }
 
     private boolean isFileOpened(String filename) {
-        return fileNames.has(filename);
+        return fileNames.containsKey(filename);
     }
 
 
@@ -32,7 +33,7 @@ public class FileTable implements IFileTable {
 
         int currentFileDescriptor = NEXT_DESCRIPTOR++;
 
-        ToyFile file = new ToyFile(filename);
+        ToyFile file = new ToyFile(filename, currentFileDescriptor);
         fileDescriptors.put(currentFileDescriptor, file);
         fileNames.put(filename, file);
 
@@ -63,8 +64,13 @@ public class FileTable implements IFileTable {
         });
     }
 
+    @Override
+    public Collection<ToyFile> getAllFiles() {
+        return fileNames.values();
+    }
+
     private ToyFile tryGetFile(Integer fileDescriptor) throws ToyException {
-        if (!fileDescriptors.has(fileDescriptor)) {
+        if (!fileDescriptors.containsKey(fileDescriptor)) {
             throw new ToyException("File descriptor not found");
         }
         return fileDescriptors.get(fileDescriptor);

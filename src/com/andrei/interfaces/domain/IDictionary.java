@@ -1,26 +1,7 @@
 package com.andrei.interfaces.domain;
 
-import java.util.Collection;
 import java.util.Map;
-import java.util.Set;
 
-public interface IDictionary<K, V> extends Cloneable {
-
-    V get(K key);
-
-    boolean has(K key);
-
-    void put(K key, V value);
-
-    void remove(K key);
-
-    boolean contains(V value);
-
-    Set<Map.Entry<K, V>> entrySet();
-
-    Set<K> keySet();
-
-    Collection<V> valueSet();
-
+public interface IDictionary<K, V> extends Map<K, V>, Cloneable {
     IDictionary<K, V> clone();
 }

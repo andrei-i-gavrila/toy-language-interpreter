@@ -1,11 +1,13 @@
 package com.andrei.impl.domain;
 
 import com.andrei.impl.domain.exceptions.ToyException;
-import com.andrei.interfaces.domain.*;
+import com.andrei.interfaces.domain.IDictionary;
+import com.andrei.interfaces.domain.IFileTable;
+import com.andrei.interfaces.domain.IHeap;
+import com.andrei.interfaces.domain.IStatement;
 
 import java.util.List;
 import java.util.Optional;
-import java.util.stream.Stream;
 
 public class ProgramState {
 
@@ -62,8 +64,8 @@ public class ProgramState {
         return heap;
     }
 
-    public boolean isNotCompleted() {
-        return !executionStack.empty();
+    public boolean isCompleted() {
+        return executionStack.empty();
     }
 
     @Override
@@ -78,5 +80,9 @@ public class ProgramState {
                 heap.toString()
         );
 
+    }
+
+    public int getThreadId() {
+        return threadId;
     }
 }

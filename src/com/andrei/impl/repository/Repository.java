@@ -3,6 +3,8 @@ package com.andrei.impl.repository;
 import com.andrei.impl.domain.ArrayList;
 import com.andrei.impl.domain.ProgramState;
 import com.andrei.interfaces.repository.IRepository;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
@@ -13,10 +15,10 @@ import java.util.List;
 public class Repository implements IRepository {
 
     private final String logFilePath;
-    private List<ProgramState> programStates;
+    private ObservableList<ProgramState> programStates;
 
     public Repository(ProgramState currentProgram, String logFilePath) {
-        this.programStates = new ArrayList<>(currentProgram);
+        this.programStates = FXCollections.observableArrayList(currentProgram);
         this.logFilePath = logFilePath;
     }
 
@@ -32,11 +34,16 @@ public class Repository implements IRepository {
         }
     }
 
-    public List<ProgramState> getProgramStates() {
+    @Override
+    public void removeCompletedProgramStates() {
+        programStates.removeIf(ProgramState::isCompleted);
+    }
+
+    public ObservableList<ProgramState> getProgramStates() {
         return programStates;
     }
 
-    public void setProgramStates(List<ProgramState> programStates) {
+    public void setProgramStates(ObservableList<ProgramState> programStates) {
         this.programStates = programStates;
     }
 }

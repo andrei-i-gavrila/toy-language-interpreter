@@ -19,20 +19,20 @@ public class Controller {
 
     public Controller(IRepository repository) {
         this.repository = repository;
+        executorService = Executors.newFixedThreadPool(2);
+
     }
 
 
-    public void oneStep(List<ProgramState> programStates) throws InterruptedException {
+    public boolean oneStep() throws InterruptedException {
+        List<ProgramState> programStates = repository.getProgramStates();
         programStates.forEach(repository::logProgramState);
 
-        repository.setProgramStates(
-                Stream.concat(
-                        programStates.stream(),
-                        executeThenGetNewProgramStates(getExecutionCallables(programStates)).stream()
-                ).collect(Collectors.toList())
-        );
-
+        repository.getProgramStates().addAll(executeThenGetNewProgramStates(getExecutionCallables(programStates)));
         programStates.forEach(repository::logProgramState);
+
+        repository.removeCompletedProgramStates();
+        return repository.getProgramStates().isEmpty();
     }
 
     private List<ProgramState> executeThenGetNewProgramStates(List<Callable<Optional<ProgramState>>> callables) throws InterruptedException {
@@ -56,21 +56,7 @@ public class Controller {
     }
 
     public void allSteps() throws ToyException, IOException, InterruptedException {
-        executorService = Executors.newFixedThreadPool(2);
-        String finalOutput;
-        do {
-            oneStep(repository.getProgramStates());
-            finalOutput = repository.getProgramStates().get(0).getOutput().toString();
-            repository.setProgramStates(getNotCompletedProgramStates());
-        } while (!repository.getProgramStates().isEmpty());
-        System.out.println(finalOutput);
-    }
-
-    private List<ProgramState> getNotCompletedProgramStates() {
-        return repository.getProgramStates()
-                .stream()
-                .filter(ProgramState::isNotCompleted)
-                .collect(Collectors.toList());
+        while(!oneStep());
     }
 
     public String getOutput() {

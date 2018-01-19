@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<GridPane xmlns="http://javafx.com/javafx"
+          xmlns:fx="http://javafx.com/fxml"
+          fx:controller="com.andrei.impl.view.gui.InterpreterViewController"
+          vgap="5" hgap="5">
+    <VBox alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="1">
+        <TextField fx:id="numberProgramStates"/>
+        <Label text="Program States"/>
+    </VBox>
+    <VBox alignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="1">
+        <Label>Thread Ids</Label>
+        <ListView fx:id="programListsIdentifiers"/>
+    </VBox>
+    <VBox alignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="1">
+        <Label>Heap Table</Label>
+        <TableView fx:id="heapTable">
+            <columns>
+                <TableColumn fx:id="addressColumn" text="Address"/>
+                <TableColumn fx:id="heapValueColumn" text="Value"/>
+            </columns>
+        </TableView>
+    </VBox>
+    <VBox alignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="1">
+        <Label>File Table</Label>
+        <TableView fx:id="fileTable">
+            <columns>
+                <TableColumn fx:id="fileDescriptorColumn" text="File descriptor"/>
+                <TableColumn fx:id="fileNameColumn" text="File name"/>
+            </columns>
+        </TableView>
+    </VBox>
+
+    <VBox alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="2">
+        <Label>Symbol Table</Label>
+        <TableView fx:id="symbolTable">
+            <columns>
+                <TableColumn fx:id="symbolNameColumn" text="Name"/>
+                <TableColumn fx:id="symbolValueColumn" text="Value"/>
+            </columns>
+        </TableView>
+    </VBox>
+    <VBox alignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="2">
+        <Label>Execution Stack</Label>
+        <ListView fx:id="executionStack"/>
+    </VBox>
+    <VBox alignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="2">
+        <Label>Output list</Label>
+        <ListView fx:id="outList"/>
+    </VBox>
+    <Button onAction="#runOneStep" text="Run one step" GridPane.columnIndex="4" GridPane.rowIndex="2"
+            GridPane.halignment="CENTER"/>
+
+</GridPane>
