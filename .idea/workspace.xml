@@ -4,56 +4,9 @@
     <bookmark url="file://$PROJECT_DIR$/src/com/andrei/impl/domain/FileTable.java" line="17" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2b3e013a-f134-4e22-8acb-7846790fa832" name="Default" comment="some blank lines">
+    <list default="true" id="2b3e013a-f134-4e22-8acb-7846790fa832" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/andrei/impl/controller/ToyController.java" afterPath="$PROJECT_DIR$/src/com/andrei/impl/controller/ToyController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/andrei/impl/domain/FileTable.java" afterPath="$PROJECT_DIR$/src/com/andrei/impl/domain/FileTable.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/andrei/impl/domain/Heap.java" afterPath="$PROJECT_DIR$/src/com/andrei/impl/domain/Heap.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/andrei/impl/domain/ProgramState.java" afterPath="$PROJECT_DIR$/src/com/andrei/impl/domain/ProgramState.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/andrei/impl/domain/ToyDictionary.java" afterPath="$PROJECT_DIR$/src/com/andrei/impl/domain/ToyDictionary.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/andrei/impl/domain/ToyFile.java" afterPath="$PROJECT_DIR$/src/com/andrei/impl/domain/ToyFile.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/andrei/impl/domain/ToyList.java" afterPath="$PROJECT_DIR$/src/com/andrei/impl/domain/ToyList.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/andrei/impl/domain/ToyStack.java" afterPath="$PROJECT_DIR$/src/com/andrei/impl/domain/ToyStack.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/andrei/impl/domain/exceptions/HeapAddressNotFoundException.java" afterPath="$PROJECT_DIR$/src/com/andrei/impl/domain/exceptions/HeapAddressNotFoundException.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/andrei/impl/domain/exceptions/ToyException.java" afterPath="$PROJECT_DIR$/src/com/andrei/impl/domain/exceptions/ToyException.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/andrei/impl/domain/exceptions/VariableException.java" afterPath="$PROJECT_DIR$/src/com/andrei/impl/domain/exceptions/VariableException.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/andrei/impl/domain/expression/Constant.java" afterPath="$PROJECT_DIR$/src/com/andrei/impl/domain/expression/Constant.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/andrei/impl/domain/expression/ReadHeap.java" afterPath="$PROJECT_DIR$/src/com/andrei/impl/domain/expression/ReadHeap.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/andrei/impl/domain/expression/Variable.java" afterPath="$PROJECT_DIR$/src/com/andrei/impl/domain/expression/Variable.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/andrei/impl/domain/expression/artihmetic/Addition.java" afterPath="$PROJECT_DIR$/src/com/andrei/impl/domain/expression/artihmetic/Addition.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/andrei/impl/domain/expression/artihmetic/ArithmeticException.java" afterPath="$PROJECT_DIR$/src/com/andrei/impl/domain/expression/artihmetic/ArithmeticException.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/andrei/impl/domain/expression/artihmetic/ArithmeticExpression.java" afterPath="$PROJECT_DIR$/src/com/andrei/impl/domain/expression/artihmetic/ArithmeticExpression.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/andrei/impl/domain/expression/artihmetic/Division.java" afterPath="$PROJECT_DIR$/src/com/andrei/impl/domain/expression/artihmetic/Division.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/andrei/impl/domain/expression/artihmetic/Subtraction.java" afterPath="$PROJECT_DIR$/src/com/andrei/impl/domain/expression/artihmetic/Subtraction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/andrei/impl/domain/expression/logic/Equal.java" afterPath="$PROJECT_DIR$/src/com/andrei/impl/domain/expression/logic/Equal.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/andrei/impl/domain/expression/logic/GreaterThan.java" afterPath="$PROJECT_DIR$/src/com/andrei/impl/domain/expression/logic/GreaterThan.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/andrei/impl/domain/expression/logic/GreaterThanOrEqual.java" afterPath="$PROJECT_DIR$/src/com/andrei/impl/domain/expression/logic/GreaterThanOrEqual.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/andrei/impl/domain/expression/logic/LessThan.java" afterPath="$PROJECT_DIR$/src/com/andrei/impl/domain/expression/logic/LessThan.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/andrei/impl/domain/expression/logic/LessThenOrEqual.java" afterPath="$PROJECT_DIR$/src/com/andrei/impl/domain/expression/logic/LessThenOrEqual.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/andrei/impl/domain/expression/logic/NotEqual.java" afterPath="$PROJECT_DIR$/src/com/andrei/impl/domain/expression/logic/NotEqual.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/andrei/impl/domain/statement/Allocate.java" afterPath="$PROJECT_DIR$/src/com/andrei/impl/domain/statement/Allocate.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/andrei/impl/domain/statement/Assignment.java" afterPath="$PROJECT_DIR$/src/com/andrei/impl/domain/statement/Assignment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/andrei/impl/domain/statement/CloseFile.java" afterPath="$PROJECT_DIR$/src/com/andrei/impl/domain/statement/CloseFile.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/andrei/impl/domain/statement/Compound.java" afterPath="$PROJECT_DIR$/src/com/andrei/impl/domain/statement/Compound.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/andrei/impl/domain/statement/If.java" afterPath="$PROJECT_DIR$/src/com/andrei/impl/domain/statement/If.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/andrei/impl/domain/statement/OpenFile.java" afterPath="$PROJECT_DIR$/src/com/andrei/impl/domain/statement/OpenFile.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/andrei/impl/domain/statement/Print.java" afterPath="$PROJECT_DIR$/src/com/andrei/impl/domain/statement/Print.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/andrei/impl/domain/statement/While.java" afterPath="$PROJECT_DIR$/src/com/andrei/impl/domain/statement/While.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/andrei/impl/domain/statement/WriteHeap.java" afterPath="$PROJECT_DIR$/src/com/andrei/impl/domain/statement/WriteHeap.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/andrei/impl/utils/ContinuousSequenceProvider.java" afterPath="$PROJECT_DIR$/src/com/andrei/impl/utils/ContinuousSequenceProvider.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/andrei/impl/utils/RandomSequenceProvider.java" afterPath="$PROJECT_DIR$/src/com/andrei/impl/utils/RandomSequenceProvider.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/andrei/impl/view/Programs.java" afterPath="$PROJECT_DIR$/src/com/andrei/impl/view/Programs.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/andrei/impl/view/gui/InterpreterView.fxml" afterPath="$PROJECT_DIR$/src/com/andrei/impl/view/gui/InterpreterView.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/andrei/impl/view/gui/InterpreterViewController.java" afterPath="$PROJECT_DIR$/src/com/andrei/impl/view/gui/InterpreterViewController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/andrei/impl/view/gui/ProgramSelectorView.fxml" afterPath="$PROJECT_DIR$/src/com/andrei/impl/view/gui/ProgramSelectorView.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/andrei/impl/view/gui/ProgramSelectorViewController.java" afterPath="$PROJECT_DIR$/src/com/andrei/impl/view/gui/ProgramSelectorViewController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/andrei/impl/view/text/Command.java" afterPath="$PROJECT_DIR$/src/com/andrei/impl/view/text/Command.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/andrei/impl/view/text/MainText.java" afterPath="$PROJECT_DIR$/src/com/andrei/impl/view/text/MainText.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/andrei/impl/view/text/RunExampleCommand.java" afterPath="$PROJECT_DIR$/src/com/andrei/impl/view/text/RunExampleCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/andrei/interfaces/domain/Dictionary.java" afterPath="$PROJECT_DIR$/src/com/andrei/interfaces/domain/Dictionary.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/andrei/interfaces/domain/IHeap.java" afterPath="$PROJECT_DIR$/src/com/andrei/interfaces/domain/IHeap.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/andrei/interfaces/repository/IRepository.java" afterPath="$PROJECT_DIR$/src/com/andrei/interfaces/repository/IRepository.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/andrei/interfaces/utils/NumberSequenceProvider.java" afterPath="$PROJECT_DIR$/src/com/andrei/interfaces/utils/NumberSequenceProvider.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -68,12 +21,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ArithmeticExpression.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/andrei/impl/domain/expression/artihmetic/ArithmeticExpression.java">
+      <file leaf-file-name="RandomSequenceProvider.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/andrei/impl/utils/RandomSequenceProvider.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="104">
+              <caret line="4" column="46" lean-forward="true" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="46" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -156,7 +111,6 @@
         <option value="$PROJECT_DIR$/src/com/andrei/impl/domain/expression/artihmetic/Division.java" />
         <option value="$PROJECT_DIR$/src/com/andrei/interfaces/domain/IStatement.java" />
         <option value="$PROJECT_DIR$/src/com/andrei/interfaces/utils/NumberSequenceProvider.java" />
-        <option value="$PROJECT_DIR$/src/com/andrei/impl/utils/RandomSequenceProvider.java" />
         <option value="$PROJECT_DIR$/src/com/andrei/impl/utils/ContinuousSequenceProvider.java" />
         <option value="$PROJECT_DIR$/src/com/andrei/impl/domain/Dictionary.java" />
         <option value="$PROJECT_DIR$/src/com/andrei/interfaces/domain/IDictionary.java" />
@@ -193,6 +147,7 @@
         <option value="$PROJECT_DIR$/src/com/andrei/impl/domain/expression/artihmetic/Addition.java" />
         <option value="$PROJECT_DIR$/src/com/andrei/impl/domain/expression/artihmetic/ArithmeticException.java" />
         <option value="$PROJECT_DIR$/src/com/andrei/impl/domain/expression/artihmetic/ArithmeticExpression.java" />
+        <option value="$PROJECT_DIR$/src/com/andrei/impl/utils/RandomSequenceProvider.java" />
       </list>
     </option>
   </component>
@@ -262,6 +217,17 @@
             <path>
               <item name="ToyLanguageInterpreter" type="b2602c69:ProjectViewProjectNode" />
               <item name="ToyLanguageInterpreter" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ToyLanguageInterpreter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ToyLanguageInterpreter" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ToyLanguageInterpreter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ToyLanguageInterpreter" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="andrei" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -375,7 +341,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
-    <property name="SearchEverywhereHistoryKey" value="control&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/controller/Controller.java&#10;ToyD&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/domain/ToyDictionary.java&#10;Collectors&#9;FILE&#9;jar:///usr/lib/jvm/java-8-openjdk/jre/lib/rt.jar!/java/util/stream/Collectors.class&#10;repo&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/repository/Repository.java&#10;toyf&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/domain/ToyFile.java&#10;hashmap&#9;FILE&#9;jar:///usr/lib/jvm/java-8-openjdk/jre/lib/rt.jar!/java/util/HashMap.class&#10;hashmapnode&#9;null&#9;null&#10;Stac&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/domain/Stack.java&#10;symbolta&#9;PSI&#9;JAVA://com.andrei.impl.domain.ProgramState#symbolTable&#10;Inter&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/view/gui/InterpreterView.fxml&#10;main&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/view/text/MainText.java&#10;FileTa&#9;PSI&#9;JAVA://com.andrei.impl.domain.FileTable&#10;hea&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/domain/Heap.java&#10;Interpreter&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/view/gui/InterpreterViewController.java&#10;run&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/view/text/RunExampleCommand.java&#10;programsta&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/domain/ProgramState.java&#10;programstat&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/domain/ProgramState.java&#10;cont&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/controller/Controller.java&#10;command&#9;PSI&#9;JAVA://com.andrei.impl.view.Command&#10;Fileta&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/interfaces/domain/IFileTable.java&#10;fork&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/domain/statement/Fork.java&#10;print&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/domain/statement/Print.java&#10;oneste&#9;PSI&#9;JAVA://com.andrei.impl.controller.Controller#oneStep&#10;repos&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/interfaces/repository/IRepository.java&#10;e5&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/e5.log&#10;pro&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/domain/ProgramState.java&#10;contr&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/controller/Controller.java&#10;e2.&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/e2.log&#10;Is&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/interfaces/domain/IStatement.java&#10;re&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/interfaces/repository/IRepository.java&#10;stack&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/domain/Stack.java&#10;if&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/domain/statement/If.java&#10;openfi&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/domain/statement/OpenFile.java&#10;read&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/domain/expression/ReadHeap.java&#10;allocate&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/domain/statement/Allocate.java&#10;controll&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/controller/Controller.java&#10;write&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/domain/statement/WriteHeap.java&#10;readh&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/domain/expression/ReadHeap.java&#10;wr&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/domain/statement/WriteHeap.java&#10;e4&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/e4.log&#10;heap&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/interfaces/domain/IHeap.java&#10;rune&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/view/RunExampleCommand.java&#10;idic&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/interfaces/domain/IDictionary.java&#10;e2&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/e2.log&#10;programs&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/domain/ProgramState.java&#10;Ifsta&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/domain/statement/IfStatement.java&#10;e2.l&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/e2.log&#10;log&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/logger.txt&#10;test.in&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/test.in&#10;text&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/view/TextMenu.java" />
+    <property name="SearchEverywhereHistoryKey" value="random&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/utils/RandomSequenceProvider.java&#10;control&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/controller/Controller.java&#10;ToyD&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/domain/ToyDictionary.java&#10;Collectors&#9;FILE&#9;jar:///usr/lib/jvm/java-8-openjdk/jre/lib/rt.jar!/java/util/stream/Collectors.class&#10;repo&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/repository/Repository.java&#10;toyf&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/domain/ToyFile.java&#10;hashmap&#9;FILE&#9;jar:///usr/lib/jvm/java-8-openjdk/jre/lib/rt.jar!/java/util/HashMap.class&#10;hashmapnode&#9;null&#9;null&#10;Stac&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/domain/Stack.java&#10;symbolta&#9;PSI&#9;JAVA://com.andrei.impl.domain.ProgramState#symbolTable&#10;Inter&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/view/gui/InterpreterView.fxml&#10;main&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/view/text/MainText.java&#10;FileTa&#9;PSI&#9;JAVA://com.andrei.impl.domain.FileTable&#10;hea&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/domain/Heap.java&#10;Interpreter&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/view/gui/InterpreterViewController.java&#10;run&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/view/text/RunExampleCommand.java&#10;programsta&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/domain/ProgramState.java&#10;programstat&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/domain/ProgramState.java&#10;cont&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/controller/Controller.java&#10;command&#9;PSI&#9;JAVA://com.andrei.impl.view.Command&#10;Fileta&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/interfaces/domain/IFileTable.java&#10;fork&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/domain/statement/Fork.java&#10;print&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/domain/statement/Print.java&#10;oneste&#9;PSI&#9;JAVA://com.andrei.impl.controller.Controller#oneStep&#10;repos&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/interfaces/repository/IRepository.java&#10;e5&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/e5.log&#10;pro&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/domain/ProgramState.java&#10;contr&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/controller/Controller.java&#10;e2.&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/e2.log&#10;Is&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/interfaces/domain/IStatement.java&#10;re&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/interfaces/repository/IRepository.java&#10;stack&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/domain/Stack.java&#10;if&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/domain/statement/If.java&#10;openfi&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/domain/statement/OpenFile.java&#10;read&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/domain/expression/ReadHeap.java&#10;allocate&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/domain/statement/Allocate.java&#10;controll&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/controller/Controller.java&#10;write&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/domain/statement/WriteHeap.java&#10;readh&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/domain/expression/ReadHeap.java&#10;wr&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/domain/statement/WriteHeap.java&#10;e4&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/e4.log&#10;heap&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/interfaces/domain/IHeap.java&#10;rune&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/view/RunExampleCommand.java&#10;idic&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/interfaces/domain/IDictionary.java&#10;e2&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/e2.log&#10;programs&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/domain/ProgramState.java&#10;Ifsta&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/src/com/andrei/impl/domain/statement/IfStatement.java&#10;e2.l&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/e2.log&#10;log&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/logger.txt&#10;test.in&#9;FILE&#9;file:///home/kiuny/Coding/java/map/ToyLanguageInterpreter/test.in" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="restartRequiresConfirmation" value="false" />
@@ -549,7 +515,8 @@
     <MESSAGE value="Somewhat finished" />
     <MESSAGE value="finally fing done" />
     <MESSAGE value="A lot of refactoring" />
-    <option name="LAST_COMMIT_MESSAGE" value="A lot of refactoring" />
+    <MESSAGE value="some blank lines" />
+    <option name="LAST_COMMIT_MESSAGE" value="some blank lines" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -719,16 +686,6 @@
         <state relative-caret-position="156">
           <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/andrei/impl/utils/RandomSequenceProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -991,6 +948,16 @@
         <state relative-caret-position="364">
           <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/andrei/impl/utils/RandomSequenceProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="4" column="46" lean-forward="true" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

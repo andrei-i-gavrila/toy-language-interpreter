@@ -2,13 +2,11 @@ package com.andrei.impl.utils;
 
 import com.andrei.interfaces.utils.NumberSequenceProvider;
 
-import java.util.Random;
+import java.util.concurrent.ThreadLocalRandom;
 
 public class RandomSequenceProvider implements NumberSequenceProvider {
 
-    private final Random provider = new Random();
-
     public Integer next() {
-        return provider.nextInt();
+        return ThreadLocalRandom.current().nextInt();
     }
 }
