@@ -5,9 +5,9 @@ import javafx.collections.ObservableList;
 
 public interface IRepository {
 
-    void setProgramStates(ObservableList<ProgramState> states);
-
     ObservableList<ProgramState> getProgramStates();
+
+    void setProgramStates(ObservableList<ProgramState> states);
 
     void logProgramState(ProgramState state);
 

@@ -7,7 +7,7 @@ import com.andrei.interfaces.domain.IStatement;
 
 import java.util.Optional;
 
-public class Print implements IStatement{
+public class Print implements IStatement {
 
     final Expression expression;
 
@@ -15,13 +15,11 @@ public class Print implements IStatement{
         this.expression = expression;
     }
 
-
     public Optional<ProgramState> execute(ProgramState state) throws ToyException {
         state.getOutput().add(expression.evaluate(state).toString() + " ");
 
         return Optional.empty();
     }
-
 
     public String toString() {
         return "print(" + expression.toString() + ")";

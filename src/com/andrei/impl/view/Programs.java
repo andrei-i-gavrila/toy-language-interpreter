@@ -34,7 +34,6 @@ public final class Programs {
                     new Print(new Constant(0)))
     );
 
-
     private static final IStatement program3 = new Compound(
             new OpenFile("f", "test.in"),
             new ReadFile(new Addition(new Variable("f"), new Constant(2)), "c"),
@@ -80,7 +79,6 @@ public final class Programs {
             new Print(new Variable("v")),
             new Print(new ReadHeap(new Variable("a")))
     );
-
 
     public static final List<IStatement> PROGRAMS = Arrays.asList(program1, program2, program3, program4, program5, program6);
 }

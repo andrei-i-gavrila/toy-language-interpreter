@@ -8,6 +8,7 @@ import com.andrei.interfaces.domain.IStatement;
 import java.util.Optional;
 
 public class While implements IStatement {
+
     private final Expression condition;
     private final IStatement statement;
 
@@ -16,7 +17,6 @@ public class While implements IStatement {
         this.statement = statement;
     }
 
-
     public Optional<ProgramState> execute(ProgramState state) throws ToyException {
         if (condition.evaluate(state) != 0) {
             state.getExecutionStack().push(this);
@@ -24,7 +24,6 @@ public class While implements IStatement {
         }
         return Optional.empty();
     }
-
 
     public String toString() {
         return "while (" + condition.toString() + ") { " + statement.toString() + " }";

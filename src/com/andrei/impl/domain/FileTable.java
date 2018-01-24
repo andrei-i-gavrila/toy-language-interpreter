@@ -11,11 +11,10 @@ import java.util.ArrayList;
 import java.util.Collection;
 
 public class FileTable implements IFileTable {
+
     private final NumberSequenceProvider descriptorProvider = new RandomSequenceProvider();
 
     private final Dictionary<Integer, ToyFile> files = new ToyDictionary<>();
-
-
 
     public Integer openFile(String filename) throws ToyException {
 

@@ -12,14 +12,12 @@ public class Variable extends Expression {
         this.variable = variable;
     }
 
-
     public Integer evaluate(ProgramState programState) throws ToyException {
         if (!programState.getSymbolTable().containsKey(variable)) {
             throw new VariableException("Variable " + variable + " does not exist!");
         }
         return programState.getSymbolTable().get(variable);
     }
-
 
     public String toString() {
         return variable;

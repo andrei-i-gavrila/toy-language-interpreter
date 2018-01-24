@@ -8,6 +8,7 @@ import com.andrei.interfaces.domain.IStatement;
 import java.util.Optional;
 
 public class OpenFile implements IStatement {
+
     private final String var;
     private final String filename;
 
@@ -16,7 +17,6 @@ public class OpenFile implements IStatement {
         this.filename = filename;
     }
 
-
     public Optional<ProgramState> execute(ProgramState state) throws ToyException {
         IFileTable fileTable = state.getFileTable();
         Integer fileDescriptor = fileTable.openFile(filename);
@@ -24,7 +24,6 @@ public class OpenFile implements IStatement {
 
         return Optional.empty();
     }
-
 
     public String toString() {
         return "openFile(" + var + ", " + filename + ")";

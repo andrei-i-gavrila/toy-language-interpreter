@@ -8,7 +8,6 @@ public class ContinuousSequenceProvider implements NumberSequenceProvider {
 
     private final AtomicInteger current = new AtomicInteger(1);
 
-
     public Integer next() {
         return current.getAndIncrement();
     }

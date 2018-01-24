@@ -7,7 +7,8 @@ import com.andrei.interfaces.domain.IStatement;
 
 import java.util.Optional;
 
-public class Assignment implements IStatement{
+public class Assignment implements IStatement {
+
     final String identifier;
     final Expression expression;
 
@@ -16,13 +17,11 @@ public class Assignment implements IStatement{
         this.expression = expression;
     }
 
-
     public Optional<ProgramState> execute(ProgramState state) throws ToyException {
         state.getSymbolTable().put(identifier, expression.evaluate(state));
 
         return Optional.empty();
     }
-
 
     public String toString() {
         return identifier + " = " + expression.toString();

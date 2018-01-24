@@ -70,7 +70,6 @@ public class ProgramState {
         return executionStack.empty();
     }
 
-
     public String toString() {
         return String.format(
                 "ProgramState %d:\nExecution ToyStack:\n%s\nSymbol Table:\n%s\nOutput:\n%s\nFileTable:\n%s\nHeap:\n%s",
@@ -81,7 +80,6 @@ public class ProgramState {
                 fileTable.toString(),
                 heap.toString()
         );
-
     }
 
     public int getThreadId() {

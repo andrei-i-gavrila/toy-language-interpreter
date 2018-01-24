@@ -5,6 +5,7 @@ import com.andrei.impl.domain.exceptions.ToyException;
 import com.andrei.impl.domain.expression.Expression;
 
 public class NotEqual extends LogicExpression {
+
     private final Expression lhs;
     private final Expression rhs;
 
@@ -13,11 +14,9 @@ public class NotEqual extends LogicExpression {
         this.rhs = rhs;
     }
 
-
     protected Boolean evaluateBool(ProgramState programState) throws ToyException {
         return !lhs.evaluate(programState).equals(rhs.evaluate(programState));
     }
-
 
     public String toString() {
         return lhs.toString() + " != " + rhs.toString();

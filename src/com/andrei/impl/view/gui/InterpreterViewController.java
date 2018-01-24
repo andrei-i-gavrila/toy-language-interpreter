@@ -56,7 +56,6 @@ public class InterpreterViewController {
                 super.bind(repository.getProgramStates());
             }
 
-
             protected ObservableList<String> computeValue() {
                 return FXCollections.observableList(repository.getProgramStates().stream().map(ProgramState::getThreadId).map(String::valueOf).collect(Collectors.toList()));
             }

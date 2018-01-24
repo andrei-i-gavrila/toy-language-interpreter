@@ -9,14 +9,11 @@ public class ToyDictionary<K, V> extends ConcurrentHashMap<K, V> implements Dict
     public ToyDictionary() {
     }
 
-
-
     public String toString() {
         return this.entrySet().stream()
                 .map(entry -> entry.getKey() + " : " + entry.getValue())
                 .reduce("", (result, current) -> result + "\n" + current);
     }
-
 
     public Dictionary<K, V> clone() {
         Dictionary<K, V> cloned = new ToyDictionary<>();

@@ -13,7 +13,6 @@ public class ToyStack<E> extends Stack<E> {
         this.push(e);
     }
 
-
     public String toString() {
         return this.stream()
                 .map(Object::toString)

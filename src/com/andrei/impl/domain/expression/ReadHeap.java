@@ -11,11 +11,9 @@ public class ReadHeap extends Expression {
         this.expression = expression;
     }
 
-
     public Integer evaluate(ProgramState programState) throws ToyException {
         return programState.getHeap().read(expression.evaluate(programState));
     }
-
 
     public String toString() {
         return "rH(" + expression.toString() + ")";

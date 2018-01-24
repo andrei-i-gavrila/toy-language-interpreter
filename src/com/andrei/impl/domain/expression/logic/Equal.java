@@ -5,6 +5,7 @@ import com.andrei.impl.domain.exceptions.ToyException;
 import com.andrei.impl.domain.expression.Expression;
 
 public class Equal extends LogicExpression {
+
     private final Expression lhs;
     private final Expression rhs;
 

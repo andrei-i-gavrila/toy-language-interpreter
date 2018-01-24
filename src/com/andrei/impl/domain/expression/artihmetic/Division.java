@@ -5,10 +5,10 @@ import com.andrei.impl.domain.exceptions.ToyException;
 import com.andrei.impl.domain.expression.Expression;
 
 public class Division extends ArithmeticExpression {
+
     protected Division(Expression lhs, Expression rhs) {
         super(lhs, rhs);
     }
-
 
     public Integer evaluate(ProgramState programState) throws ToyException {
         Integer rhs = this.rhs.evaluate(programState);
@@ -19,7 +19,6 @@ public class Division extends ArithmeticExpression {
 
         return lhs.evaluate(programState) / rhs;
     }
-
 
     public String toString() {
         return "(" + lhs.toString() + ") / (" + rhs.toString() + ")";

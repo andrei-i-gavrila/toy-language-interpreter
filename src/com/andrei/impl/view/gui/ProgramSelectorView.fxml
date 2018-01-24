@@ -5,8 +5,9 @@
 <?import javafx.scene.control.ChoiceBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.BorderPane?>
-<BorderPane prefHeight="200" prefWidth="250" xmlns="http://javafx.com/javafx/8.0.121"
-            xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.andrei.impl.view.gui.ProgramSelectorViewController">
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="200" prefWidth="250"
+            xmlns="http://javafx.com/javafx/8.0.121"
+            fx:controller="com.andrei.impl.view.gui.ProgramSelectorViewController">
     <padding>
         <Insets top="10" bottom="10" right="10" left="10"/>
     </padding>
@@ -17,7 +18,8 @@
         <ChoiceBox fx:id="programList" prefWidth="Infinity" BorderPane.alignment="CENTER"/>
     </center>
     <bottom>
-        <Button fx:id="startButton" onAction="#startProgram" text="Run program" prefWidth="Infinity" BorderPane.alignment="CENTER"/>
+        <Button fx:id="startButton" onAction="#startProgram" text="Run program" prefWidth="Infinity"
+                BorderPane.alignment="CENTER"/>
 
     </bottom>
 </BorderPane>

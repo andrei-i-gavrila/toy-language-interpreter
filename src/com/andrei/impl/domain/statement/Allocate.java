@@ -7,7 +7,7 @@ import com.andrei.interfaces.domain.IStatement;
 
 import java.util.Optional;
 
-public class Allocate implements IStatement{
+public class Allocate implements IStatement {
 
     final String variable;
     final Expression valueExpression;

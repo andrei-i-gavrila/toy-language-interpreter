@@ -7,8 +7,6 @@ import com.andrei.impl.domain.expression.artihmetic.Addition;
 import com.andrei.impl.domain.expression.artihmetic.Subtraction;
 import com.andrei.impl.domain.expression.logic.NotEqual;
 import com.andrei.impl.domain.statement.*;
-import com.andrei.impl.view.text.RunExampleCommand;
-import com.andrei.impl.view.text.TextMenu;
 import com.andrei.interfaces.domain.IStatement;
 
 public class MainText {
@@ -33,7 +31,6 @@ public class MainText {
                                 new Print(new Variable("c"))),
                         new Print(new Constant(0)))
         );
-
 
         IStatement program3 = new Compound(
                 new OpenFile("f", "test.in"),

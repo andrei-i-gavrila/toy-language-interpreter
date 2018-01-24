@@ -13,10 +13,10 @@ import javafx.stage.Stage;
 import java.util.List;
 
 public class ProgramSelectorViewController {
-    public ChoiceBox<IStatement> programList;
-    public Button startButton;
 
     private final Stage interpreterStage = new Stage();
+    public ChoiceBox<IStatement> programList;
+    public Button startButton;
 
     public void initialize(List<IStatement> programs) {
         programList.setItems(FXCollections.observableArrayList(programs));

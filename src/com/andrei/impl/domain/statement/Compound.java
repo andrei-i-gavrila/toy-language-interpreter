@@ -23,14 +23,12 @@ public class Compound implements IStatement {
         }
     }
 
-
     public Optional<ProgramState> execute(ProgramState state) throws ArithmeticException {
         state.getExecutionStack().push(nextStatement);
         state.getExecutionStack().push(thisStatement);
-        
+
         return Optional.empty();
     }
-
 
     public String toString() {
         return thisStatement.toString() + ";" + nextStatement.toString();

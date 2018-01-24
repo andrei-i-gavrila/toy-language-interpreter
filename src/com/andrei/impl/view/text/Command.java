@@ -3,6 +3,7 @@ package com.andrei.impl.view.text;
 import java.util.Scanner;
 
 public abstract class Command implements Runnable {
+
     protected static final Scanner scanner = new Scanner(System.in);
 
     protected final String key;

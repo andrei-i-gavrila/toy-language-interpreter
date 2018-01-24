@@ -25,7 +25,6 @@ public class If implements IStatement {
         this.elseStatement = null;
     }
 
-
     public Optional<ProgramState> execute(ProgramState state) throws ToyException {
         if (condition.evaluate(state) != 0) {
             state.getExecutionStack().push(thenStatement);
@@ -35,7 +34,6 @@ public class If implements IStatement {
 
         return Optional.empty();
     }
-
 
     public String toString() {
         return "if (" + condition.toString() + ") " +

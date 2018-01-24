@@ -11,6 +11,7 @@ import java.util.concurrent.Executors;
 import java.util.stream.Collectors;
 
 public class ToyController {
+
     private final IRepository repository;
     private final ExecutorService executorService;
 
@@ -18,7 +19,6 @@ public class ToyController {
         this.repository = repository;
         executorService = Executors.newFixedThreadPool(2);
     }
-
 
     public boolean oneStep() throws InterruptedException {
         repository.getProgramStates().addAll(executeThenGetNewProgramStates(getExecutionCallables(repository.getProgramStates())));
@@ -53,5 +53,4 @@ public class ToyController {
             repository.getProgramStates().forEach(repository::logProgramState);
         }
     }
-
 }

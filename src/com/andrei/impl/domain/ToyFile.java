@@ -12,8 +12,8 @@ public class ToyFile {
     private final Integer fileDescriptor;
     private final String filename;
     private final BufferedReader reader;
-    
-    public ToyFile(String filename, Integer fileDescriptor) throws ToyException{
+
+    public ToyFile(String filename, Integer fileDescriptor) throws ToyException {
         this.filename = filename;
         reader = tryOpenReader(filename);
         this.fileDescriptor = fileDescriptor;

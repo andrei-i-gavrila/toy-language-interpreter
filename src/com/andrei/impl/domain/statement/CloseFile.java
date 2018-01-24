@@ -8,6 +8,7 @@ import com.andrei.interfaces.domain.IStatement;
 import java.util.Optional;
 
 public class CloseFile implements IStatement {
+
     private final Expression fileDescriptorExpression;
 
     public CloseFile(Expression fileDescriptorExpression) {
@@ -22,6 +23,6 @@ public class CloseFile implements IStatement {
     }
 
     public String toString() {
-        return "closeFile("+fileDescriptorExpression.toString()+")";
+        return "closeFile(" + fileDescriptorExpression.toString() + ")";
     }
 }

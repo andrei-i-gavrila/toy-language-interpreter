@@ -1,6 +1,5 @@
 package com.andrei.impl.domain;
 
-
 import java.util.ArrayList;
 
 public class ToyList<E> extends ArrayList<E> {

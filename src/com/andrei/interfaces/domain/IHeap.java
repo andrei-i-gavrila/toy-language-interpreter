@@ -14,5 +14,4 @@ public interface IHeap {
     Integer read(Integer address) throws HeapAddressNotFoundException;
 
     Set<Map.Entry<Integer, Integer>> entrySet();
-
 }
