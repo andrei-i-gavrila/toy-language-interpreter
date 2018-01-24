@@ -13,7 +13,6 @@ public class MainGUI extends Application {
         launch(args);
     }
 
-    @Override
     public void start(Stage stage) throws Exception {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("ProgramSelectorView.fxml"));
         stage.setScene(new Scene(loader.load()));

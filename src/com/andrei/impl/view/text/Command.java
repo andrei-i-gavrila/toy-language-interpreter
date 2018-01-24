@@ -21,7 +21,6 @@ public abstract class Command implements Runnable {
         return description;
     }
 
-    @Override
     public String toString() {
         return getKey() + ": " + getDescription();
     }

@@ -16,7 +16,7 @@ public class ProgramSelectorViewController {
     public ChoiceBox<IStatement> programList;
     public Button startButton;
 
-    private Stage interpreterStage = new Stage();
+    private final Stage interpreterStage = new Stage();
 
     public void initialize(List<IStatement> programs) {
         programList.setItems(FXCollections.observableArrayList(programs));

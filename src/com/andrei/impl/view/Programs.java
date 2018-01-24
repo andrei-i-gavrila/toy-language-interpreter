@@ -9,14 +9,12 @@ import com.andrei.impl.domain.expression.logic.NotEqual;
 import com.andrei.impl.domain.statement.*;
 import com.andrei.interfaces.domain.IStatement;
 
-import java.sql.Statement;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 
 public final class Programs {
 
-    private static IStatement program1 = new Compound(
+    private static final IStatement program1 = new Compound(
             new OpenFile("file", "test.in"),
             new ReadFile(new Variable("file"), "a"),
             new ReadFile(new Variable("file"), "b"),
@@ -24,7 +22,7 @@ public final class Programs {
             new CloseFile(new Variable("file"))
     );
 
-    private static IStatement program2 = new Compound(
+    private static final IStatement program2 = new Compound(
             new OpenFile("f", "test.in"),
             new ReadFile(new Variable("f"), "c"),
             new Print(new Variable("c")),
@@ -37,7 +35,7 @@ public final class Programs {
     );
 
 
-    private static IStatement program3 = new Compound(
+    private static final IStatement program3 = new Compound(
             new OpenFile("f", "test.in"),
             new ReadFile(new Addition(new Variable("f"), new Constant(2)), "c"),
             new Print(new Variable("c")),
@@ -50,7 +48,7 @@ public final class Programs {
             new CloseFile(new Variable("f"))
     );
 
-    private static IStatement program4 = new Compound(
+    private static final IStatement program4 = new Compound(
             new Assignment("v", new Constant(10)),
             new Allocate("v", new Constant(22)),
             new Allocate("a", new Constant(22)),
@@ -60,7 +58,7 @@ public final class Programs {
             new Assignment("a", new Constant(0))
     );
 
-    private static IStatement program5 = new Compound(
+    private static final IStatement program5 = new Compound(
             new Assignment("v", new Constant(6)),
             new While(
                     new NotEqual(new Variable("v"), new Constant(4)),
@@ -70,7 +68,7 @@ public final class Programs {
             new Print(new Variable("v"))
     );
 
-    private static IStatement program6 = new Compound(
+    private static final IStatement program6 = new Compound(
             new Assignment("v", new Constant(10)),
             new Allocate("a", new Constant(22)),
             new Fork(new Compound(
@@ -84,5 +82,5 @@ public final class Programs {
     );
 
 
-    public static List<IStatement> PROGRAMS = Arrays.asList(program1, program2, program3, program4, program5, program6);
+    public static final List<IStatement> PROGRAMS = Arrays.asList(program1, program2, program3, program4, program5, program6);
 }

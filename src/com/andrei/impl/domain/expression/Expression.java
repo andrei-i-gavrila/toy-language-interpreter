@@ -7,4 +7,5 @@ public abstract class Expression {
 
     public abstract Integer evaluate(ProgramState programState) throws ToyException;
 
+    public abstract String toString();
 }

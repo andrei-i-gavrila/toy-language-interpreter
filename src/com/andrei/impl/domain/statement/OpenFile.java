@@ -16,7 +16,7 @@ public class OpenFile implements IStatement {
         this.filename = filename;
     }
 
-    @Override
+
     public Optional<ProgramState> execute(ProgramState state) throws ToyException {
         IFileTable fileTable = state.getFileTable();
         Integer fileDescriptor = fileTable.openFile(filename);
@@ -25,7 +25,7 @@ public class OpenFile implements IStatement {
         return Optional.empty();
     }
 
-    @Override
+
     public String toString() {
         return "openFile(" + var + ", " + filename + ")";
     }

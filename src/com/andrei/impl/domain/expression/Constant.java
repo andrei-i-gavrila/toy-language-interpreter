@@ -9,12 +9,10 @@ public class Constant extends Expression {
         this.number = number;
     }
 
-    @Override
     public Integer evaluate(ProgramState programState) {
         return number;
     }
 
-    @Override
     public String toString() {
         return number.toString();
     }

@@ -23,7 +23,7 @@ public class Compound implements IStatement {
         }
     }
 
-    @Override
+
     public Optional<ProgramState> execute(ProgramState state) throws ArithmeticException {
         state.getExecutionStack().push(nextStatement);
         state.getExecutionStack().push(thisStatement);
@@ -31,7 +31,7 @@ public class Compound implements IStatement {
         return Optional.empty();
     }
 
-    @Override
+
     public String toString() {
         return thisStatement.toString() + ";" + nextStatement.toString();
     }

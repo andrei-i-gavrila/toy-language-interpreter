@@ -1,38 +1,40 @@
 package com.andrei.impl.domain;
 
 import com.andrei.impl.domain.exceptions.ToyException;
-import com.andrei.interfaces.domain.IDictionary;
+import com.andrei.impl.utils.ContinuousSequenceProvider;
+import com.andrei.interfaces.domain.Dictionary;
 import com.andrei.interfaces.domain.IFileTable;
 import com.andrei.interfaces.domain.IHeap;
 import com.andrei.interfaces.domain.IStatement;
+import com.andrei.interfaces.utils.NumberSequenceProvider;
 
 import java.util.List;
 import java.util.Optional;
 
 public class ProgramState {
 
-    private int threadId;
-    private final Stack<IStatement> executionStack;
-    private final IDictionary<String, Integer> symbolTable;
+    private static final NumberSequenceProvider threadIdProvider = new ContinuousSequenceProvider();
+
+    private final int threadId;
+    private final ToyStack<IStatement> executionStack;
+    private final Dictionary<String, Integer> symbolTable;
     private final List<String> output;
     private final IFileTable fileTable;
     private final IHeap heap;
 
     public ProgramState(IStatement startStatement) {
-        threadId = 1;
-        executionStack = new Stack<>();
-        executionStack.push(startStatement);
+        threadId = threadIdProvider.next();
+        executionStack = new ToyStack<>(startStatement);
 
-        symbolTable = new Dictionary<>();
-        output = new ArrayList<>();
+        symbolTable = new ToyDictionary<>();
+        output = new ToyList<>();
         fileTable = new FileTable();
         heap = new Heap();
     }
 
     public ProgramState(IStatement forkedStatement, ProgramState clonedProgramState) {
-        threadId = clonedProgramState.threadId * 10;
-        executionStack = new Stack<>();
-        executionStack.push(forkedStatement);
+        threadId = threadIdProvider.next();
+        executionStack = new ToyStack<>(forkedStatement);
 
         symbolTable = clonedProgramState.symbolTable.clone();
         output = clonedProgramState.output;
@@ -48,11 +50,11 @@ public class ProgramState {
         return fileTable;
     }
 
-    public Stack<IStatement> getExecutionStack() {
+    public ToyStack<IStatement> getExecutionStack() {
         return executionStack;
     }
 
-    public IDictionary<String, Integer> getSymbolTable() {
+    public Dictionary<String, Integer> getSymbolTable() {
         return symbolTable;
     }
 
@@ -68,10 +70,10 @@ public class ProgramState {
         return executionStack.empty();
     }
 
-    @Override
+
     public String toString() {
         return String.format(
-                "ProgramState %d:\nExecution Stack:\n%s\nSymbol Table:\n%s\nOutput:\n%s\nFileTable:\n%s\nHeap:\n%s",
+                "ProgramState %d:\nExecution ToyStack:\n%s\nSymbol Table:\n%s\nOutput:\n%s\nFileTable:\n%s\nHeap:\n%s",
                 threadId,
                 executionStack.toString(),
                 symbolTable.toString(),

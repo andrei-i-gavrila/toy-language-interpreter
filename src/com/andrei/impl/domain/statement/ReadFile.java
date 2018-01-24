@@ -19,7 +19,6 @@ public class ReadFile implements IStatement {
         this.var = var;
     }
 
-    @Override
     public Optional<ProgramState> execute(ProgramState state) throws ToyException {
         IFileTable fileTable = state.getFileTable();
         int fileDescriptor = fileDescriptorExpression.evaluate(state);
@@ -40,7 +39,6 @@ public class ReadFile implements IStatement {
         return Optional.empty();
     }
 
-    @Override
     public String toString() {
         return "readFromFile(" + var + ", " + fileDescriptorExpression.toString() + ")";
     }

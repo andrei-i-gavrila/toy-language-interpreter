@@ -1,6 +1,6 @@
 package com.andrei.impl.view.gui;
 
-import com.andrei.impl.controller.Controller;
+import com.andrei.impl.controller.ToyController;
 import com.andrei.impl.domain.ProgramState;
 import com.andrei.impl.domain.ToyFile;
 import com.andrei.impl.repository.Repository;
@@ -37,14 +37,14 @@ public class InterpreterViewController {
     public TableColumn<Map.Entry<String, Integer>, String> symbolNameColumn;
     public TableColumn<Map.Entry<String, Integer>, Integer> symbolValueColumn;
 
-    private Controller controller;
+    private ToyController controller;
     private ProgramState activeProgramState;
     private IRepository repository;
 
     public void initialize(IStatement statement) {
         activeProgramState = new ProgramState(statement);
         repository = new Repository(activeProgramState, "log" + String.valueOf(statement.toString().hashCode()));
-        controller = new Controller(repository);
+        controller = new ToyController(repository);
         initializeBindings();
         render();
     }
@@ -56,7 +56,7 @@ public class InterpreterViewController {
                 super.bind(repository.getProgramStates());
             }
 
-            @Override
+
             protected ObservableList<String> computeValue() {
                 return FXCollections.observableList(repository.getProgramStates().stream().map(ProgramState::getThreadId).map(String::valueOf).collect(Collectors.toList()));
             }

@@ -9,15 +9,14 @@ import java.util.Optional;
 
 public class Allocate implements IStatement{
 
-    String variable;
-    Expression valueExpression;
+    final String variable;
+    final Expression valueExpression;
 
     public Allocate(String variable, Expression valueExpression) {
         this.variable = variable;
         this.valueExpression = valueExpression;
     }
 
-    @Override
     public Optional<ProgramState> execute(ProgramState state) throws ToyException {
         Integer allocatedMemoryAddress = state.getHeap().allocate();
         state.getSymbolTable().put(variable, allocatedMemoryAddress);
@@ -26,7 +25,6 @@ public class Allocate implements IStatement{
         return Optional.empty();
     }
 
-    @Override
     public String toString() {
         return "new(" + variable + ", " + valueExpression.toString() + ")";
     }

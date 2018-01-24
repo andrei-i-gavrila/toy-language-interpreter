@@ -9,4 +9,5 @@ public interface IStatement {
 
     Optional<ProgramState> execute(ProgramState state) throws ToyException;
 
+    String toString();
 }

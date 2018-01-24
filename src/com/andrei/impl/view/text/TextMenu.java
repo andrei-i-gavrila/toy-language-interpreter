@@ -14,7 +14,6 @@ public class TextMenu extends Command {
         Arrays.stream(commands).forEach(command -> this.commands.put(command.getKey(), command));
     }
 
-    @Override
     public void run() {
         running = true;
 

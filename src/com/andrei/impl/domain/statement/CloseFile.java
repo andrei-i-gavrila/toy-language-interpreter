@@ -14,7 +14,6 @@ public class CloseFile implements IStatement {
         this.fileDescriptorExpression = fileDescriptorExpression;
     }
 
-    @Override
     public Optional<ProgramState> execute(ProgramState state) throws ToyException {
         int fileDescriptor = fileDescriptorExpression.evaluate(state);
         state.getFileTable().closeFile(fileDescriptor);
@@ -22,7 +21,6 @@ public class CloseFile implements IStatement {
         return Optional.empty();
     }
 
-    @Override
     public String toString() {
         return "closeFile("+fileDescriptorExpression.toString()+")";
     }

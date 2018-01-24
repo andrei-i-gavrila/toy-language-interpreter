@@ -2,7 +2,10 @@ package com.andrei.impl.domain;
 
 import com.andrei.impl.domain.exceptions.ToyException;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
 
 public class ToyFile {
 
@@ -40,7 +43,6 @@ public class ToyFile {
         return filename;
     }
 
-    @Override
     public String toString() {
         return filename;
     }

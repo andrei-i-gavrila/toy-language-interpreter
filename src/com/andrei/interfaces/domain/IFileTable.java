@@ -5,7 +5,6 @@ import com.andrei.impl.domain.exceptions.ToyException;
 
 import java.io.BufferedReader;
 import java.util.Collection;
-import java.util.List;
 
 public interface IFileTable {
 

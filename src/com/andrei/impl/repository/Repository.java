@@ -1,6 +1,5 @@
 package com.andrei.impl.repository;
 
-import com.andrei.impl.domain.ArrayList;
 import com.andrei.impl.domain.ProgramState;
 import com.andrei.interfaces.repository.IRepository;
 import javafx.collections.FXCollections;
@@ -10,7 +9,6 @@ import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.List;
 
 public class Repository implements IRepository {
 
@@ -22,7 +20,6 @@ public class Repository implements IRepository {
         this.logFilePath = logFilePath;
     }
 
-    @Override
     public void logProgramState(ProgramState state) {
         try {
             new PrintWriter(new BufferedWriter(new FileWriter(logFilePath, true)))
@@ -34,7 +31,6 @@ public class Repository implements IRepository {
         }
     }
 
-    @Override
     public void removeCompletedProgramStates() {
         programStates.removeIf(ProgramState::isCompleted);
     }

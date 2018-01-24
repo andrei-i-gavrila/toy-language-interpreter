@@ -1,37 +1,29 @@
 package com.andrei.impl.controller;
 
 import com.andrei.impl.domain.ProgramState;
-import com.andrei.impl.domain.exceptions.ToyException;
 import com.andrei.interfaces.repository.IRepository;
 
-import java.io.IOException;
 import java.util.List;
 import java.util.Optional;
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
-public class Controller {
+public class ToyController {
     private final IRepository repository;
-    private ExecutorService executorService;
+    private final ExecutorService executorService;
 
-    public Controller(IRepository repository) {
+    public ToyController(IRepository repository) {
         this.repository = repository;
         executorService = Executors.newFixedThreadPool(2);
-
     }
 
 
     public boolean oneStep() throws InterruptedException {
-        List<ProgramState> programStates = repository.getProgramStates();
-        programStates.forEach(repository::logProgramState);
-
-        repository.getProgramStates().addAll(executeThenGetNewProgramStates(getExecutionCallables(programStates)));
-        programStates.forEach(repository::logProgramState);
-
+        repository.getProgramStates().addAll(executeThenGetNewProgramStates(getExecutionCallables(repository.getProgramStates())));
         repository.removeCompletedProgramStates();
+
         return repository.getProgramStates().isEmpty();
     }
 
@@ -55,11 +47,11 @@ public class Controller {
                 .collect(Collectors.toList());
     }
 
-    public void allSteps() throws ToyException, IOException, InterruptedException {
-        while(!oneStep());
+    public void allSteps() throws InterruptedException {
+        repository.getProgramStates().forEach(repository::logProgramState);
+        while (!oneStep()) {
+            repository.getProgramStates().forEach(repository::logProgramState);
+        }
     }
 
-    public String getOutput() {
-        return " ";
-    }
 }

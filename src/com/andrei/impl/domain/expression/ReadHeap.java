@@ -5,18 +5,18 @@ import com.andrei.impl.domain.exceptions.ToyException;
 
 public class ReadHeap extends Expression {
 
-    Expression expression;
+    final Expression expression;
 
     public ReadHeap(Expression expression) {
         this.expression = expression;
     }
 
-    @Override
+
     public Integer evaluate(ProgramState programState) throws ToyException {
         return programState.getHeap().read(expression.evaluate(programState));
     }
 
-    @Override
+
     public String toString() {
         return "rH(" + expression.toString() + ")";
     }

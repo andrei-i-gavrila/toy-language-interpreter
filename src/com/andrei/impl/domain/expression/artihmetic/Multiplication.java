@@ -10,12 +10,10 @@ public class Multiplication extends ArithmeticExpression {
         super(lhs, rhs);
     }
 
-    @Override
     public Integer evaluate(ProgramState programState) throws ToyException {
         return lhs.evaluate(programState) * rhs.evaluate(programState);
     }
 
-    @Override
     public String toString() {
         return "(" + lhs.toString() + ") * (" + rhs.toString() + ")";
     }

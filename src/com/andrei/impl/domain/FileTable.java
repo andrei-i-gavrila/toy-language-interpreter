@@ -1,61 +1,44 @@
 package com.andrei.impl.domain;
 
 import com.andrei.impl.domain.exceptions.ToyException;
-import com.andrei.interfaces.domain.IDictionary;
+import com.andrei.impl.utils.RandomSequenceProvider;
+import com.andrei.interfaces.domain.Dictionary;
 import com.andrei.interfaces.domain.IFileTable;
+import com.andrei.interfaces.utils.NumberSequenceProvider;
 
 import java.io.BufferedReader;
 import java.util.ArrayList;
 import java.util.Collection;
 
 public class FileTable implements IFileTable {
-    private static int NEXT_DESCRIPTOR = 1;
+    private final NumberSequenceProvider descriptorProvider = new RandomSequenceProvider();
 
-    private final IDictionary<String, ToyFile> fileNames;
-    private final IDictionary<Integer, ToyFile> fileDescriptors;
-
-
-    FileTable() {
-        fileDescriptors = new Dictionary<>();
-        fileNames = new Dictionary<>();
-    }
-
-    private boolean isFileOpened(String filename) {
-        return fileNames.containsKey(filename);
-    }
+    private final Dictionary<Integer, ToyFile> files = new ToyDictionary<>();
 
 
-    @Override
+
     public Integer openFile(String filename) throws ToyException {
-        if (isFileOpened(filename)) {
-            throw new ToyException("File already opened");
-        }
 
-        int currentFileDescriptor = NEXT_DESCRIPTOR++;
+        int currentFileDescriptor = descriptorProvider.next();
 
         ToyFile file = new ToyFile(filename, currentFileDescriptor);
-        fileDescriptors.put(currentFileDescriptor, file);
-        fileNames.put(filename, file);
+        files.put(currentFileDescriptor, file);
 
         return currentFileDescriptor;
     }
 
-    @Override
     public void closeFile(Integer fileDescriptor) throws ToyException {
         ToyFile file = tryGetFile(fileDescriptor);
         file.close();
-        fileNames.remove(file.getFilename());
-        fileDescriptors.remove(fileDescriptor);
+        files.remove(fileDescriptor);
     }
 
-    @Override
     public BufferedReader getFileReader(Integer fileDescriptor) throws ToyException {
         return tryGetFile(fileDescriptor).getReader();
     }
 
-    @Override
     public void closeAllFiles() {
-        new ArrayList<>(fileDescriptors.keySet()).forEach(fileDescriptor -> {
+        new ArrayList<>(files.keySet()).forEach(fileDescriptor -> {
             try {
                 closeFile(fileDescriptor);
             } catch (ToyException e) {
@@ -64,23 +47,19 @@ public class FileTable implements IFileTable {
         });
     }
 
-    @Override
     public Collection<ToyFile> getAllFiles() {
-        return fileNames.values();
+        return files.values();
     }
 
     private ToyFile tryGetFile(Integer fileDescriptor) throws ToyException {
-        if (!fileDescriptors.containsKey(fileDescriptor)) {
+        if (!files.containsKey(fileDescriptor)) {
             throw new ToyException("File descriptor not found");
         }
-        return fileDescriptors.get(fileDescriptor);
+
+        return files.get(fileDescriptor);
     }
 
-    @Override
     public String toString() {
-        return fileDescriptors.entrySet().stream()
-                .map(entry -> entry.getValue() + " : " + entry.getKey())
-                .reduce((result, current) -> result + "\n" + current)
-                .orElse("Empty");
+        return files.toString();
     }
 }
