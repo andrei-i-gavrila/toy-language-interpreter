@@ -6,7 +6,7 @@ import com.andrei.impl.domain.exceptions.ToyException;
 import java.io.BufferedReader;
 import java.util.Collection;
 
-public interface IFileTable {
+public interface FileTable {
 
     Integer openFile(String filename) throws ToyException;
 

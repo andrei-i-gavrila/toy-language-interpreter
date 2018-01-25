@@ -2,10 +2,7 @@ package com.andrei.impl.domain;
 
 import com.andrei.impl.domain.exceptions.ToyException;
 import com.andrei.impl.utils.ContinuousSequenceProvider;
-import com.andrei.interfaces.domain.Dictionary;
-import com.andrei.interfaces.domain.IFileTable;
-import com.andrei.interfaces.domain.IHeap;
-import com.andrei.interfaces.domain.IStatement;
+import com.andrei.interfaces.domain.*;
 import com.andrei.interfaces.utils.NumberSequenceProvider;
 
 import java.util.List;
@@ -16,23 +13,25 @@ public class ProgramState {
     private static final NumberSequenceProvider threadIdProvider = new ContinuousSequenceProvider();
 
     private final int threadId;
-    private final ToyStack<IStatement> executionStack;
+    private final ToyStack<Statement> executionStack;
     private final Dictionary<String, Integer> symbolTable;
     private final List<String> output;
-    private final IFileTable fileTable;
-    private final IHeap heap;
+    private final FileTable fileTable;
+    private final Heap heap;
+    private final BarrierTable barrierTable;
 
-    public ProgramState(IStatement startStatement) {
+    public ProgramState(Statement startStatement) {
         threadId = threadIdProvider.next();
         executionStack = new ToyStack<>(startStatement);
 
         symbolTable = new ToyDictionary<>();
         output = new ToyList<>();
-        fileTable = new FileTable();
-        heap = new Heap();
+        fileTable = new ToyFileTable();
+        heap = new ToyHeap();
+        barrierTable = new ToyBarrierTable();
     }
 
-    public ProgramState(IStatement forkedStatement, ProgramState clonedProgramState) {
+    public ProgramState(Statement forkedStatement, ProgramState clonedProgramState) {
         threadId = threadIdProvider.next();
         executionStack = new ToyStack<>(forkedStatement);
 
@@ -40,17 +39,22 @@ public class ProgramState {
         output = clonedProgramState.output;
         fileTable = clonedProgramState.fileTable;
         heap = clonedProgramState.heap;
+        barrierTable = clonedProgramState.barrierTable;
+    }
+
+    public BarrierTable getBarrierTable() {
+        return barrierTable;
     }
 
     public Optional<ProgramState> oneStep() throws ToyException {
         return executionStack.pop().execute(this);
     }
 
-    public IFileTable getFileTable() {
+    public FileTable getFileTable() {
         return fileTable;
     }
 
-    public ToyStack<IStatement> getExecutionStack() {
+    public ToyStack<Statement> getExecutionStack() {
         return executionStack;
     }
 
@@ -62,7 +66,7 @@ public class ProgramState {
         return output;
     }
 
-    public IHeap getHeap() {
+    public Heap getHeap() {
         return heap;
     }
 
@@ -72,7 +76,7 @@ public class ProgramState {
 
     public String toString() {
         return String.format(
-                "ProgramState %d:\nExecution ToyStack:\n%s\nSymbol Table:\n%s\nOutput:\n%s\nFileTable:\n%s\nHeap:\n%s",
+                "ProgramState %d:\nExecution ToyStack:\n%s\nSymbol Table:\n%s\nOutput:\n%s\nToyFileTable:\n%s\nToyHeap:\n%s",
                 threadId,
                 executionStack.toString(),
                 symbolTable.toString(),

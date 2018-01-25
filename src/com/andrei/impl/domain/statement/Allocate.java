@@ -3,11 +3,11 @@ package com.andrei.impl.domain.statement;
 import com.andrei.impl.domain.ProgramState;
 import com.andrei.impl.domain.exceptions.ToyException;
 import com.andrei.impl.domain.expression.Expression;
-import com.andrei.interfaces.domain.IStatement;
+import com.andrei.interfaces.domain.Statement;
 
 import java.util.Optional;
 
-public class Allocate implements IStatement {
+public class Allocate implements Statement {
 
     final String variable;
     final Expression valueExpression;

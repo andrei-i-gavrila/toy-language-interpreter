@@ -7,21 +7,24 @@ import com.andrei.interfaces.domain.Statement;
 
 import java.util.Optional;
 
-public class Print implements Statement {
+public class NewBarrier implements Statement {
 
+    final String variableName;
     final Expression expression;
 
-    public Print(Expression expression) {
+    public NewBarrier(String variableName, Expression expression) {
+        this.variableName = variableName;
         this.expression = expression;
     }
 
     public Optional<ProgramState> execute(ProgramState state) throws ToyException {
-        state.getOutput().add(expression.evaluate(state).toString() + " ");
+        Integer barrierId = state.getBarrierTable().createBarrier(expression.evaluate(state));
+        state.getSymbolTable().put(variableName, barrierId);
 
         return Optional.empty();
     }
 
     public String toString() {
-        return "print(" + expression.toString() + ")";
+        return "newBarrier(" + variableName + ", " + expression.toString() + ")";
     }
 }

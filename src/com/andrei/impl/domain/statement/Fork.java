@@ -2,15 +2,15 @@ package com.andrei.impl.domain.statement;
 
 import com.andrei.impl.domain.ProgramState;
 import com.andrei.impl.domain.exceptions.ToyException;
-import com.andrei.interfaces.domain.IStatement;
+import com.andrei.interfaces.domain.Statement;
 
 import java.util.Optional;
 
-public class Fork implements IStatement {
+public class Fork implements Statement {
 
-    private final IStatement forkedStatement;
+    private final Statement forkedStatement;
 
-    public Fork(IStatement forkedStatement) {
+    public Fork(Statement forkedStatement) {
         this.forkedStatement = forkedStatement;
     }
 

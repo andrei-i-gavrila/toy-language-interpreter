@@ -1,6 +1,6 @@
 package com.andrei.impl.view.gui;
 
-import com.andrei.interfaces.domain.IStatement;
+import com.andrei.interfaces.domain.Statement;
 import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
@@ -15,10 +15,10 @@ import java.util.List;
 public class ProgramSelectorViewController {
 
     private final Stage interpreterStage = new Stage();
-    public ChoiceBox<IStatement> programList;
+    public ChoiceBox<Statement> programList;
     public Button startButton;
 
-    public void initialize(List<IStatement> programs) {
+    public void initialize(List<Statement> programs) {
         programList.setItems(FXCollections.observableArrayList(programs));
     }
 

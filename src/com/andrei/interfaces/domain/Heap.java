@@ -5,7 +5,7 @@ import com.andrei.impl.domain.exceptions.HeapAddressNotFoundException;
 import java.util.Map;
 import java.util.Set;
 
-public interface IHeap {
+public interface Heap {
 
     Integer allocate();
 

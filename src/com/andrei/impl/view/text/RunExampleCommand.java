@@ -3,13 +3,13 @@ package com.andrei.impl.view.text;
 import com.andrei.impl.controller.ToyController;
 import com.andrei.impl.domain.ProgramState;
 import com.andrei.impl.repository.Repository;
-import com.andrei.interfaces.domain.IStatement;
+import com.andrei.interfaces.domain.Statement;
 
 public class RunExampleCommand extends Command {
 
-    private final IStatement program;
+    private final Statement program;
 
-    public RunExampleCommand(String key, IStatement program) {
+    public RunExampleCommand(String key, Statement program) {
         super(key, program.toString());
         this.program = program;
     }

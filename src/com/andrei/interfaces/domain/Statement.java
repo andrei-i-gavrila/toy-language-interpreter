@@ -5,7 +5,7 @@ import com.andrei.impl.domain.exceptions.ToyException;
 
 import java.util.Optional;
 
-public interface IStatement {
+public interface Statement {
 
     Optional<ProgramState> execute(ProgramState state) throws ToyException;
 

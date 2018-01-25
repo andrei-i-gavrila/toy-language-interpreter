@@ -3,13 +3,13 @@ package com.andrei.impl.domain.statement;
 import com.andrei.impl.domain.ProgramState;
 import com.andrei.impl.domain.exceptions.ToyException;
 import com.andrei.impl.domain.expression.Expression;
-import com.andrei.interfaces.domain.IFileTable;
-import com.andrei.interfaces.domain.IStatement;
+import com.andrei.interfaces.domain.FileTable;
+import com.andrei.interfaces.domain.Statement;
 
 import java.io.IOException;
 import java.util.Optional;
 
-public class ReadFile implements IStatement {
+public class ReadFile implements Statement {
 
     private final Expression fileDescriptorExpression;
     private final String var;
@@ -20,7 +20,7 @@ public class ReadFile implements IStatement {
     }
 
     public Optional<ProgramState> execute(ProgramState state) throws ToyException {
-        IFileTable fileTable = state.getFileTable();
+        FileTable fileTable = state.getFileTable();
         int fileDescriptor = fileDescriptorExpression.evaluate(state);
 
         String line;

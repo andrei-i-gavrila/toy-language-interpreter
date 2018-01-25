@@ -4,11 +4,11 @@ import com.andrei.impl.domain.ProgramState;
 import com.andrei.impl.domain.exceptions.ToyException;
 import com.andrei.impl.domain.expression.Expression;
 import com.andrei.impl.domain.expression.Variable;
-import com.andrei.interfaces.domain.IStatement;
+import com.andrei.interfaces.domain.Statement;
 
 import java.util.Optional;
 
-public class WriteHeap implements IStatement {
+public class WriteHeap implements Statement {
 
     final String variable;
     final Expression valueExpression;

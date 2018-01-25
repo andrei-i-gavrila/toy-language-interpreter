@@ -6,7 +6,7 @@ import com.andrei.impl.domain.expression.Expression;
 
 public class Multiplication extends ArithmeticExpression {
 
-    protected Multiplication(Expression lhs, Expression rhs) {
+    public Multiplication(Expression lhs, Expression rhs) {
         super(lhs, rhs);
     }
 

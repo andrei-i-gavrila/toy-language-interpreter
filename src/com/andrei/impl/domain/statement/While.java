@@ -3,16 +3,16 @@ package com.andrei.impl.domain.statement;
 import com.andrei.impl.domain.ProgramState;
 import com.andrei.impl.domain.exceptions.ToyException;
 import com.andrei.impl.domain.expression.Expression;
-import com.andrei.interfaces.domain.IStatement;
+import com.andrei.interfaces.domain.Statement;
 
 import java.util.Optional;
 
-public class While implements IStatement {
+public class While implements Statement {
 
     private final Expression condition;
-    private final IStatement statement;
+    private final Statement statement;
 
-    public While(Expression condition, IStatement statement) {
+    public While(Expression condition, Statement statement) {
         this.condition = condition;
         this.statement = statement;
     }

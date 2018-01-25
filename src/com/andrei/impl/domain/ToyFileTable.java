@@ -3,14 +3,14 @@ package com.andrei.impl.domain;
 import com.andrei.impl.domain.exceptions.ToyException;
 import com.andrei.impl.utils.RandomSequenceProvider;
 import com.andrei.interfaces.domain.Dictionary;
-import com.andrei.interfaces.domain.IFileTable;
+import com.andrei.interfaces.domain.FileTable;
 import com.andrei.interfaces.utils.NumberSequenceProvider;
 
 import java.io.BufferedReader;
 import java.util.ArrayList;
 import java.util.Collection;
 
-public class FileTable implements IFileTable {
+public class ToyFileTable implements FileTable {
 
     private final NumberSequenceProvider descriptorProvider = new RandomSequenceProvider();
 

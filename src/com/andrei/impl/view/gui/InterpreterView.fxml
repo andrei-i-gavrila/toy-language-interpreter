@@ -15,6 +15,10 @@
         <ListView fx:id="programListsIdentifiers"/>
     </VBox>
     <VBox alignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="1">
+        <Button onAction="#runOneStep" text="Run one step"/>
+        <Button onAction="#runAllStep" text="Run all steps"/>
+    </VBox>
+    <VBox alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="2">
         <Label>Heap Table</Label>
         <TableView fx:id="heapTable">
             <columns>
@@ -23,7 +27,7 @@
             </columns>
         </TableView>
     </VBox>
-    <VBox alignment="CENTER" GridPane.columnIndex="4" GridPane.rowIndex="1">
+    <VBox alignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="2">
         <Label>File Table</Label>
         <TableView fx:id="fileTable">
             <columns>
@@ -32,8 +36,7 @@
             </columns>
         </TableView>
     </VBox>
-
-    <VBox alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="2">
+    <VBox alignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="2">
         <Label>Symbol Table</Label>
         <TableView fx:id="symbolTable">
             <columns>
@@ -42,15 +45,23 @@
             </columns>
         </TableView>
     </VBox>
-    <VBox alignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="2">
+    <VBox alignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="3">
         <Label>Execution Stack</Label>
         <ListView fx:id="executionStack"/>
     </VBox>
-    <VBox alignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="2">
+    <VBox alignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="3">
         <Label>Output list</Label>
         <ListView fx:id="outList"/>
     </VBox>
-    <Button onAction="#runOneStep" text="Run one step" GridPane.columnIndex="4" GridPane.rowIndex="2"
-            GridPane.halignment="CENTER"/>
+    <VBox alignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="3">
+        <Label>Barrier Table</Label>
+        <TableView fx:id="barrierTable">
+            <columns>
+                <TableColumn fx:id="barrierIdColumn" text="Id"/>
+                <TableColumn fx:id="barrierLimitColumn" text="Limit"/>
+                <TableColumn fx:id="barrierThreadsColumn" text="Threads"/>
+            </columns>
+        </TableView>
+    </VBox>
 
 </GridPane>

@@ -2,9 +2,10 @@ package com.andrei.impl.view.gui;
 
 import com.andrei.impl.controller.ToyController;
 import com.andrei.impl.domain.ProgramState;
+import com.andrei.impl.domain.ToyBarrier;
 import com.andrei.impl.domain.ToyFile;
 import com.andrei.impl.repository.Repository;
-import com.andrei.interfaces.domain.IStatement;
+import com.andrei.interfaces.domain.Statement;
 import com.andrei.interfaces.repository.IRepository;
 import javafx.beans.binding.Bindings;
 import javafx.beans.binding.ListBinding;
@@ -36,12 +37,16 @@ public class InterpreterViewController {
     public TableView<Map.Entry<String, Integer>> symbolTable;
     public TableColumn<Map.Entry<String, Integer>, String> symbolNameColumn;
     public TableColumn<Map.Entry<String, Integer>, Integer> symbolValueColumn;
+    public TableView<Map.Entry<Integer, ToyBarrier>> barrierTable;
+    public TableColumn<Map.Entry<Integer, ToyBarrier>, Integer> barrierIdColumn;
+    public TableColumn<Map.Entry<Integer, ToyBarrier>, Integer> barrierLimitColumn;
+    public TableColumn<Map.Entry<Integer, ToyBarrier>, String> barrierThreadsColumn;
 
     private ToyController controller;
     private ProgramState activeProgramState;
     private IRepository repository;
 
-    public void initialize(IStatement statement) {
+    public void initialize(Statement statement) {
         activeProgramState = new ProgramState(statement);
         repository = new Repository(activeProgramState, "log" + String.valueOf(statement.toString().hashCode()));
         controller = new ToyController(repository);
@@ -85,6 +90,12 @@ public class InterpreterViewController {
 
         symbolNameColumn.setCellValueFactory(cellData -> new SimpleStringProperty(cellData.getValue().getKey()));
         symbolValueColumn.setCellValueFactory(cellData -> new SimpleIntegerProperty(cellData.getValue().getValue()).asObject());
+
+        barrierIdColumn.setCellValueFactory(cellData -> new SimpleIntegerProperty(cellData.getValue().getKey()).asObject());
+        barrierLimitColumn.setCellValueFactory(cellData -> new SimpleIntegerProperty(cellData.getValue().getValue().getLimit()).asObject());
+        barrierThreadsColumn.setCellValueFactory(cellData -> new SimpleStringProperty(
+                cellData.getValue().getValue().getProgramStateIdentifiers().stream().map(Object::toString).collect(Collectors.joining(", "))
+        ));
     }
 
     public void renderSymbolTable() {
@@ -114,6 +125,10 @@ public class InterpreterViewController {
         Collections.reverse(executionStack.getItems());
     }
 
+    public void renderBarrierTable() {
+        barrierTable.getItems().setAll(activeProgramState.getBarrierTable().getBarriers().entrySet());
+    }
+
     public void runOneStep(ActionEvent actionEvent) throws InterruptedException {
         boolean done = controller.oneStep();
         render();
@@ -135,5 +150,13 @@ public class InterpreterViewController {
         renderSymbolTable();
         renderHeapTable();
         renderFileTable();
+        renderBarrierTable();
+    }
+
+    public void runAllStep(ActionEvent actionEvent) throws InterruptedException {
+        while (!controller.oneStep()) {
+            render();
+        }
+        showDoneMessage();
     }
 }

@@ -1,17 +1,17 @@
 package com.andrei.impl.domain.statement;
 
 import com.andrei.impl.domain.ProgramState;
-import com.andrei.interfaces.domain.IStatement;
+import com.andrei.interfaces.domain.Statement;
 
 import java.util.Arrays;
 import java.util.Optional;
 
-public class Compound implements IStatement {
+public class Compound implements Statement {
 
-    private IStatement thisStatement;
-    private IStatement nextStatement;
+    private Statement thisStatement;
+    private Statement nextStatement;
 
-    public Compound(IStatement... statements) {
+    public Compound(Statement... statements) {
         if (statements.length > 2) {
             this.thisStatement = statements[0];
             this.nextStatement = new Compound(Arrays.copyOfRange(statements, 1, statements.length));

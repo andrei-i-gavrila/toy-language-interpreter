@@ -3,23 +3,23 @@ package com.andrei.impl.domain.statement;
 import com.andrei.impl.domain.ProgramState;
 import com.andrei.impl.domain.exceptions.ToyException;
 import com.andrei.impl.domain.expression.Expression;
-import com.andrei.interfaces.domain.IStatement;
+import com.andrei.interfaces.domain.Statement;
 
 import java.util.Optional;
 
-public class If implements IStatement {
+public class If implements Statement {
 
     final Expression condition;
-    final IStatement thenStatement;
-    final IStatement elseStatement;
+    final Statement thenStatement;
+    final Statement elseStatement;
 
-    public If(Expression condition, IStatement thenStatement, IStatement elseStatement) {
+    public If(Expression condition, Statement thenStatement, Statement elseStatement) {
         this.condition = condition;
         this.thenStatement = thenStatement;
         this.elseStatement = elseStatement;
     }
 
-    public If(Expression condition, IStatement statement) {
+    public If(Expression condition, Statement statement) {
         this.condition = condition;
         this.thenStatement = statement;
         this.elseStatement = null;

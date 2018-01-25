@@ -2,19 +2,19 @@ package com.andrei.impl.domain;
 
 import com.andrei.impl.domain.exceptions.HeapAddressNotFoundException;
 import com.andrei.impl.utils.RandomSequenceProvider;
-import com.andrei.interfaces.domain.IHeap;
+import com.andrei.interfaces.domain.Heap;
 import com.andrei.interfaces.utils.NumberSequenceProvider;
 
 import java.util.Map;
 import java.util.Set;
 
-public class Heap implements IHeap {
+public class ToyHeap implements Heap {
 
     public static final Integer NULL = 0;
     private final Map<Integer, Integer> heap;
     private final NumberSequenceProvider addressProvider;
 
-    public Heap() {
+    public ToyHeap() {
         this.heap = new ToyDictionary<>();
         this.addressProvider = new RandomSequenceProvider();
     }

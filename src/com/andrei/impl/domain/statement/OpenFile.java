@@ -2,12 +2,12 @@ package com.andrei.impl.domain.statement;
 
 import com.andrei.impl.domain.ProgramState;
 import com.andrei.impl.domain.exceptions.ToyException;
-import com.andrei.interfaces.domain.IFileTable;
-import com.andrei.interfaces.domain.IStatement;
+import com.andrei.interfaces.domain.FileTable;
+import com.andrei.interfaces.domain.Statement;
 
 import java.util.Optional;
 
-public class OpenFile implements IStatement {
+public class OpenFile implements Statement {
 
     private final String var;
     private final String filename;
@@ -18,7 +18,7 @@ public class OpenFile implements IStatement {
     }
 
     public Optional<ProgramState> execute(ProgramState state) throws ToyException {
-        IFileTable fileTable = state.getFileTable();
+        FileTable fileTable = state.getFileTable();
         Integer fileDescriptor = fileTable.openFile(filename);
         state.getSymbolTable().put(var, fileDescriptor);
 
